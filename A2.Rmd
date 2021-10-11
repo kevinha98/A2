@@ -5,10 +5,10 @@ author:
 - Kevin Ha - 571821
 - Ola Andre Olofsson - 170745
 output:
-  html_document:
-    df_print: paged
   word_document: default
   pdf_document: default
+  html_document:
+    df_print: paged
 ---
 
 ```{r setup, message=FALSE, echo = FALSE}
@@ -16,6 +16,7 @@ knitr::opts_chunk$set(echo = FALSE)
 library(modelr)
 library(ggplot2)
 library(knitr)
+library(dplyr)
 options(scipen = 999)
 ```
 
@@ -61,6 +62,52 @@ Følgende er forklaringene på variablene:
 ggplot(data = hoyde,
        aes(x = inntekt)) + 
   geom_histogram()
+
 ```
 Her ser vi noen utliggere på høyresiden. Dette er 143 observasjoner av personer som tjener rett under 3MNOK. De skiller seg fra resten av observasjonene i histogrammet grunnet at både median- og snittlønn er langt lavere.
+
+Vi har også personer *uten* inntekt i datasettet.
+
+### Regresjonsanalyse
+```{r regresjonanalyse}
+(lm(inntekt ~ height_cm, data = hoyde)) %>%
+  summary()
+```
+Her ser vi at en økning i høyden på 1 cm, gir 9978.5 kr mer i årlig inntekt. La oss prøve med datasett uten de 2% med toppinntekt, og uten de med inntekt = 0.
+```{r}
+# Nå filtrerer vi ut de observasjonene med inntekt lavere enn 1,6MNOK. Vi ser da under "Environment" at vi sitter igjen med 6863 observasjoner i datasettet "hoyde_max_inntekt".
+
+hoyde_max_inntekt <- hoyde %>%
+  filter(inntekt < 1600000)
+
+# For illustrajonshensikter, kan vi også se hvordan dette histogrammet har endret seg i forhold til det forrige.
+
+ggplot(data = hoyde_max_inntekt,
+       aes(x = inntekt)) + 
+  geom_histogram()
+```
+Her ser vi at utliggerne forsvinner, ettersom den vannrette aksen kun viser observasjoner hvor inntekt er lavere enn 1.600.000.
+```{r regresjonanalyse2}
+(lm(inntekt ~ height_cm, data = hoyde_max_inntekt)) %>%
+  summary()
+```
+Her ser vi at en økning i høyden på 1 cm, gir 5828.4 kr mer i årlig inntekt.
+```{r}
+# Nå filtrerer vi ut de observasjonene med inntekt høyere enn 0. Vi ser da under "Environment" at vi sitter igjen med 6863 observasjoner i datasettet "hoyde_max_inntekt".
+
+hoyde_min_inntekt <- hoyde %>%
+  filter(inntekt > 0)
+
+# For illustrajonshensikter, kan vi også se hvordan dette histogrammet har endret seg i forhold til det forrige.
+
+ggplot(data = hoyde_min_inntekt,
+       aes(x = inntekt)) + 
+  geom_histogram()
+```
+
+```{r regresjonsanalyse3}
+(lm(inntekt ~ height_cm, data = hoyde_min_inntekt)) %>%
+  summary()
+```
+Her ser vi at en økning i høyden på 1 cm, gir 11122.9 kr mer i årlig inntekt.
 

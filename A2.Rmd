@@ -5,9 +5,9 @@ author:
 - Kevin Ha - 571821
 - Ola Andre Olofsson - 170745
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
   word_document: default
 ---
 
@@ -28,7 +28,7 @@ Dette er oppgave 2 i kurset MSB105 Data Science. I den følgende artikkelen anve
 
 ## Analyse med egen versjon av datasettet
 I henhold til oppgaveteksten, angir vi datasettet for *hoyde*.
-```{r hoyde, echo=FALSE}
+```{r hoyde, echo=TRUE}
 # Vi selekterer ut dataene for heights fra pakken modelr, og angir deretter benevnelsen "hoyde"
 
 data('heights', package = 'modelr')
@@ -56,7 +56,7 @@ Følgende er forklaringene på variablene:
 
 ### Exploratory Data Analysis (EDA) vha. ggplot
 
-```{r histogram, echo=FALSE}
+```{r histogram, echo=TRUE}
 # Her har vi laget et histogram av variablene income (også kalt inntekt)
 ggplot(data = hoyde,
        aes(x = inntekt)) + 

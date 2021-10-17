@@ -29,6 +29,27 @@ Dette er oppgave 2 i kurset MSB105 Data Science. I den følgende artikkelen anve
 
 ## En kort litteraturgjennomgang på ca. 1 side
 
+I Judge og Cable fra 2004 @judgeEffectPhysicalHeight2004, kommer de med utsagnet at "høgde påvirker inntekten" er ved første øyenkast en gammel myte, men at det kanskje er mer til det enn man først skulle trodd. For å støtte dette utsagnet referer de til Robert & Herman sin forskning som viser til at høyde er et trekk som er ettertraktet i en sosial sammenheng.
+
+Denne forskningen mener også at mennesker som er høyere er mer overbevisende. De viser også til @highamRiseFallPoliticians1992 som påstår at høye folk er mer sannsynlig til å komme i ein lederstilling. Judge & Cable teoriserer at dette muligens har røtter i biologi, ettersom at høyde i naturen er en måling får styrke.
+
+En studie utført av Kurtz @burnsRetailSalespersonsInquiry1993 viste at 78% av ansettelser innen salg, var mennesker med over gjennomsnittlig høyde. Dette ble argumentert av rekrutterene å være fordi mennesker over gjennomsnittlig høyde ville være mer utmerket ovenfor kundene, i forhold til små mennesker.
+
+Jugdge og Cable @judgeEffectPhysicalHeight2004, ville svare på dette med å utføre en studie med tre hovedpunkter. Først fremstille en modell som viser **sammenhengen/forholdet** mellom høyde og karrieresuksess. De begrunnet dette med at dee ikke var blitt utført tidlegere. Steg to var å utføre en metaanalyse på tidlegere analyser og litteratur for å se etter generelle implikasjoner. Siste steget var å utføre fire nye undersøkelser på **sammenhengen/forholdet** mellom en persons høyde og inntekt.
+
+Argumentet for å se på **sammenhengen/forholdet** mellom en persons høyde og inntekt var fordi de anså inntekt som den primære faktoren for karrieresuksess. Men i følge @EMPIRICALINVESTIGATIONPREDICTORS og @whitelyRelationshipCareerMentoring1991, så er det nesten ingen støttende forskning på dette.
+
+Jugde og Cable @judgeEffectPhysicalHeight2004, tok i sin undersøkelse utgangspunkt i flere menneskelige faktorer for å produsere sin modell for **sammenhengen/forholdet** mellom en persons høyde og inntekt.
+
+Noen av punktene de så på var selvtillit og sosial rang. Judge & Cable @judgeEffectPhysicalHeight2004 mente dette var to viktige punkter i analysen fordi disse to faktorene påvirker en persons arbeidsinnsats og hvordan en person blir behandlet i arbeidslivet av arbeidsgiveren. Dette mente faktorene ville påvirke en persons suksess i arbeidslivet, og medføre at en høyere person ville ha høyere inntekt enn en lavere person.
+
+Modellen til Judge og Cable @judgeEffectPhysicalHeight2004, kom frem til at det var en form for "rekke" av påvirkninger på en høy person i arbeidslivet. Høyden til en person medfører bedre selvtillit. Denne selvitiliten vil føre til høyere sosial rang, som igjen ville til bedre arbeidsinnsats og muligheter, som videre fører til karrieresuksess.
+
+For å støtte opp under dette grunnlaget for modellen, henviste de til flere tidlegere studier gjort rundt høyde, karrieremuligheter og suksess, samt til flere andre studier om hvordan selvtillit blir påvirket av ulike personlige faktorer.
+
+Studien som Judge og Cable @judgeEffectPhysicalHeight2004 gjennomførte konkluderte med at det var en direkte sammenheng mellom en persons høyde og inntekt. I senere tid har dette resultatet blitt sett på og folk mener at sunn fornuft tilsier at dette ikke kan stemme eller at det må være andre eller flere faktorer som spiller inn.
+--
+
 ## Analyse med egen versjon av datasettet
 I henhold til oppgaveteksten, angir vi datasettet for *hoyde*.
 ```{r hoyde, echo=TRUE}
@@ -123,26 +144,4 @@ Disse ytterliggenhetene påvirker resultatet av analysen. Disse to ekstreme obse
 
 
 For å finne et mer reelt resultat må vi se vekk ifra de ekstreme ytterliggenhetene. I dette tilfellet vil resultat blir reelt om vi ser vekk ifra både 0 inntekt og 3 millioner i inntekt. Dette vil vi gjøre **senere/videre** i oppgaven.
-
-# Litterature review
-
-I Judge og Cable fra 2004 @judgeEffectPhysicalHeight2004, kommer de med utsagent at "høgde påvirker inntekten" er ved første øyenkast en gammel myte, men at det kanskje er mer til det enn mann først skulle trodd. For å støtte dette utsagnet referer de til Robert & Herman sin forskning som viser til at høyde er ett trekt som er ettertraktet i en sosial sammenheng.
-
-Denne forskningen mener også at mennesker som er høyere er mer overtalenede. De viser også til @highamRiseFallPoliticians1992 som påstår at høye folk er mer sannsynlig til å komme i ein ledelses posisjon. Judge & Cable theoriserer at dette muligens har røter i biologi, ettersom i naturen så er høgde en måling får styrke.
-
-En studie utført av Kurtz @burnsRetailSalespersonsInquiry1993 viste at 78% av ansettelser innen salg var mennesker over gjennomsnittlig høyde. Dette ble argumentert av rekruterene å være fordi mennesker over gjennomsnittlig høyde ville være mer utmerket ovenfor kundene, i forhold til små mennesker.
-
-Jugdge og Cable @judgeEffectPhysicalHeight2004, ville svare på dette med å utføre en studie med tre hovedpunkter. Først fremstille en modell som viser **sammenhengen/forholdet** mellom høyde og karriere suksess. De begrunnet dette med at dette ikke var blitt utført tidlegere. Steg to var å utføre en meta analyse på tidlegere analyser og litteratur for å se etter generelle implikasjoner. Siste steget var å utføre fire nye undersøkelser på **sammenhengen/forholdet** mellom en persons høyde og dens inntekt.
-
-Argumentet for å se på **sammenhengen/forholdet** mellom en persons høyde og inntekt var fordi de anså inntekt som den primære faktoren for karriere suksess. Men i følge @EMPIRICALINVESTIGATIONPREDICTORS og @whitelyRelationshipCareerMentoring1991, så er det nesten ingen forskning på dette.
-
-Jugde og Cable @judgeEffectPhysicalHeight2004, tok i sin undersøkelse utgangspunkt i flere menneskelige faktorer for å produsere sin modell for **sammenhengen/forholdet** mellom en persons høyde og inntekt.
-
-Noen av punktene de så på var selvtillit og sosial aktelse. Judge & Cable @judgeEffectPhysicalHeight2004 mente dette var to viktige punkter i analysen fordi disse to faktorene påvirker en persons arbeidsinnsats og hvordan en person blir behandlet i arbeidslivet av arbeidsgiveren. Dette mente de ville påvirke en persons suksess i arbeidslivet, altså medføre at en høy person ville ha bedre inntekt enn en lav person.
-
-Modellen til Judge og Cable @judgeEffectPhysicalHeight2004, kom frem til at den var en form for "rekke" av påvirkninger på en høy person i arbeidslivet. Høyden til en person medføre bedre selvtillit. Denne selvitiliten ville føre til høyere sosial aktelse, som igjen ville til bedre arbeidsinnsats og muligheter, som videre fører til karriere suksess.
-
-For å støtte opp under dette grunnlaget for modellen henviste de til flere tidlegere studier gjort rundt høyde og karriere muligheter og suksess, samt til flere andre studier om hvordan selvtillit blir påvirket av ulike personlige faktorer.
-
-Studien som Judge og Cable @judgeEffectPhysicalHeight2004, gjennomførte konkluderte til slutt med at det faktisk var en direkte sammenheng mellom en persons høyde og inntekt. I senere tid har dette resultatet blitt sett på og folk mener at sunn fornuft tilsier at dette ikke kan stemme eller at det må være andre eller flere faktorer som spiller inn.
 --

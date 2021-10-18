@@ -20,6 +20,7 @@ library(modelr)
 library(ggplot2)
 library(knitr)
 library(dplyr)
+library(cars)
 options(scipen = 999)
 ```
 
@@ -103,7 +104,7 @@ Vi har også personer *uten* inntekt i datasettet.
 
 Her ser vi at en økning i høyden på 1 cm, gir 9978.5 kr mer i årlig inntekt. La oss prøve med datasett uten de 2% med toppinntekt, og uten de med inntekt = 0.
 
-```{r}
+```{r max_inntekt}
 # Nå filtrerer vi ut de observasjonene med inntekt lavere enn 1,6MNOK. Vi ser da under "Environment" at vi sitter igjen med 6863 observasjoner i datasettet "hoyde_max_inntekt".
 
 hoyde_max_inntekt <- hoyde %>%
@@ -125,7 +126,7 @@ Her ser vi at utliggerne forsvinner, ettersom den vannrette aksen kun viser obse
 
 Her ser vi at en økning i høyden på 1 cm, gir 5828.4 kr mer i årlig inntekt.
 
-```{r}
+```{r min_inntekt}
 # Nå filtrerer vi ut de observasjonene med inntekt høyere enn 0. Vi ser da under "Environment" at vi sitter igjen med 6863 observasjoner i datasettet "hoyde_max_inntekt".
 
 hoyde_min_inntekt <- hoyde %>%
@@ -145,6 +146,27 @@ ggplot(data = hoyde_min_inntekt,
 
 Her ser vi at en økning i høyden på 1 cm, gir 11122.9 kr mer i årlig inntekt.
 
+```{r min_og_max_inntekt}
+# Tar her å ser på når vi tar vekk både 0 inntekt og topp 2% i samme modell i stedenfor hver for seg som tidligere. Gjør dette for å illustrere forskjellen mellom disse modellene.
+
+hoyde_min_og_max_inntekt <- hoyde %>%
+  filter(inntekt < 1600000) %>% 
+  filter(inntekt > 0)
+
+# Fremstiller dette i ggplott for å illustrere forskjellen mellom modellene ovenfor grafisk.
+
+ggplot(data = hoyde_min_og_max_inntekt,
+       aes(x = inntekt)) + 
+  geom_histogram()
+```
+
+```{r regresjonsanalyse4}
+(lm(inntekt ~ height_cm, data = hoyde_min_og_max_inntekt)) %>%
+  summary()
+```
+
+Ser her at om vi tar vekk både 0 inntekt og topp 2% inntekt, så vil 1 cm tilsvare enn lønnsøkning på 6088.8 kr.
+
 #### Forklaring til Ytterliggere i *plots* (Prøver å unngå Merge Conflict)
 
 Som vi ser ut fra grafen er det en stor ujevnhet. I datasettet er den største andelen av observasjonene fra ca 700 000 kroner og ned, med en mindre andel over dette. 143 observasjoner har rett i underkant av 3 millioner kroner. Dette er det den høyre ytterliggenheten i datasettet.
@@ -153,7 +175,7 @@ Vi har også med observasjoner *uten* lønn. Dette er den venstre ytterliggenhet
 
 Disse ytterliggenhetene påvirker resultatet av analysen. Disse to ekstreme observasjonene resulterer at sammenhengen mellom høyde og snitt- og medianlønn blir feilaktig fremstilt. Vi får dermed feil informasjon ut av dataene vi analyserer. Vi får tilfeller der en lav person er arbeidsledig eller at en høy person har langt høyere inntekt, slik som analysen fra National Longitudinal Study kom frem til.
 
-For å finne et mer reelt resultat må vi se vekk ifra de ekstreme ytterliggenhetene. I dette tilfellet vil resultat blir reelt om vi ser vekk ifra både 0 inntekt og 3 millioner i inntekt. Dette vil vi gjøre **senere/videre** i oppgaven.
+For å finne et mer reelt resultat må vi se vekk ifra de ekstreme ytterliggenhetene. I dette tilfellet vil resultat blir reelt om vi ser vekk ifra både 0 inntekt og 3 millioner i inntekt. Dette gjennomførte vi under kode-chunken "regresjonsanalyse4" ovenfor.
 
 # To do list:
 

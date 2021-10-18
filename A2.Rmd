@@ -176,9 +176,7 @@ Disse ytterliggenhetene påvirker resultatet av analysen. Disse to ekstreme obse
 
 For å finne et mer reelt resultat må vi se vekk ifra de ekstreme ytterliggenhetene. I dette tilfellet vil resultat blir reelt om vi ser vekk ifra både 0 inntekt og 3 millioner i inntekt. Dette gjennomførte vi under kode-chunken "regresjonsanalyse4" ovenfor.
 
-# To do list:
-
-## Mutate
+# Mutate
 
 Vi lager to nye datasett med nye variabler ved å bruke *mutate()* funksjonen. Et datasett der vi tar med hele tidlegere datasettet, dvs. med 0 inntekt og topp 2%. Vi lager så enda et datasett der vi tar uten 0 inntekt og topp 2%.
 
@@ -192,7 +190,7 @@ hoyde <- hoyde %>%
     height_cm = 2.54 * height,
     weight_kg = weight * 0.45,
     bmi = (weight / (height_cm / 100)^2)
-  )
+)
 ```
 
 Filtrert datasett, nye variabler
@@ -203,10 +201,26 @@ hoyde_filtrert <- hoyde_min_og_max_inntekt %>%
     height_cm = 2.54 * height,
     weight_kg = weight * 0.45,
     bmi = (weight / (height_cm / 100)^2)
-  )
+)
 ```
 
+# To do list:
+
 ### Gift - ikke gift
+
+```{r}
+# Inne i en pipe med hoyde
+  mutate(married = factor(
+   case_when(
+# note, summary showed no NA for marital
+    marital =='married'~ TRUE,
+# all other categories FALSE
+    TRUE ~ FALSE
+    )
+  )
+)
+```
+
 
 #### Hux Reg
 

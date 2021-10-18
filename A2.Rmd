@@ -16,7 +16,7 @@ bibliography: Height_And_Income.bib
 ---
 
 ```{r setup, message=FALSE, echo = FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
 library(modelr)
 library(ggplot2)
 library(knitr)
@@ -185,26 +185,40 @@ Vi lager to nye datasett med nye variabler ved å bruke *mutate()* funksjonen. E
 
 *pund* er 450g, eller 0.45kg
 
-Helt datasett, nye variabler:
+Helt datasett, nye variabler, BMI og gift - ikke gift:
 
 ```{r nye_variabler_hele_datasettet}
 hoyde <- hoyde %>% 
   mutate(
     height_cm = 2.54 * height,
     weight_kg = weight * 0.45,
-    bmi = (weight / (height_cm / 100)^2)
+    bmi = (weight / (height_cm / 100)^2),
+    married = factor(
+      case_when(
+      # note, summary showed no NA for marital
+        marital =='married'~ TRUE,
+        # all other categories FALSE
+        TRUE ~ FALSE)
+  )
 )
 ```
 
-Filtrert datasett, nye variabler:
+Filtrert datasett, nye variabler, BMI og gift - ikke gift:
 
 ```{r nye_variable_filtrert_datasett}
 hoyde_filtrert <- hoyde_min_og_max_inntekt %>% 
   mutate(
     height_cm = 2.54 * height,
     weight_kg = weight * 0.45,
-    bmi = (weight / (height_cm / 100)^2)
-)
+    bmi = (weight / (height_cm / 100)^2),
+    married = factor(
+      case_when(
+      # note, summary showed no NA for marital
+        marital =='married'~ TRUE,
+        # all other categories FALSE
+        TRUE ~ FALSE)
+    )
+  )
 ```
 
 # To do list:

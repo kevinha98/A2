@@ -88,7 +88,6 @@ Følgende er forklaringene på variablene:
 ggplot(data = hoyde,
        aes(x = inntekt)) + 
   geom_histogram()
-
 ```
 
 Her ser vi noen utliggere på høyresiden. Dette er 143 observasjoner av personer som tjener rett under 3MNOK. De skiller seg fra resten av observasjonene i histogrammet grunnet at både median- og snittlønn er langt lavere.
@@ -160,23 +159,23 @@ For å finne et mer reelt resultat må vi se vekk ifra de ekstreme ytterliggenhe
 
 ## Mutate
 
-## høyde_cm og vekt_kg vha. mutate funksjon
+### høyde_cm og vekt_kg vha. mutate funksjon
 
-## BMI-Variabel
+### BMI-Variabel
 
-## Gift - ikke gift
+### Gift - ikke gift
 
-### Hux Reg
+#### Hux Reg
 
-## Test av robusthet
+### Test av robusthet
 
-## Ein modell med interaksjon mht. variabelen "sex"
+### Ein modell med interaksjon mht. variabelen "sex"
 
-## Test av koefisient ved linearHypothesis() (car pakken)
+### Test av koefisient ved linearHypothesis() (car pakken)
 
-## Residualene fra endelig modell skal legges til datasettet hoyde. height_cm skal plottes mot residualenefor ‘facet_grid(sex ~ factor(married, labels = c(“not married,” “married”)))
+### Residualene fra endelig modell skal legges til datasettet hoyde. height_cm skal plottes mot residualenefor ‘facet_grid(sex ~ factor(married, labels = c(“not married,” “married”)))
 
-## ggPlot av samtlige observasjoner. Svak bakgrunn (opacity)
+### ggPlot av samtlige observasjoner. Svak bakgrunn (opacity)
 
 # Konklusjon
 

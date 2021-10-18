@@ -179,7 +179,7 @@ Disse ytterliggenhetene påvirker resultatet av analysen. Disse to ekstreme obse
 
 For å finne et mer reelt resultat må vi se vekk ifra de ekstreme ytterliggenhetene. I dette tilfellet vil resultat blir reelt om vi ser vekk ifra både 0 inntekt og 3 millioner i inntekt. Dette gjennomførte vi under kode-chunken "regresjonsanalyse4" ovenfor.
 
-# Mutate
+# Mutate: Nye Variabler
 
 Vi lager to nye datasett med nye variabler ved å bruke *mutate()* funksjonen. Et datasett der vi tar med hele tidlegere datasettet, dvs. med 0 inntekt og topp 2%. Vi lager så enda et datasett der vi tar uten 0 inntekt og topp 2%.
 
@@ -235,39 +235,24 @@ Oppsummerer resultatet via *summary()*
 summary(hoyde_filtrert)
 ```
 
-# To do list:
+# HuxReg
 
-## Hux Reg
+Setter opp for å sette opp en HuxTable på datasettene med nye variabler.
 
+*lm_hoyde* er fulle datasettet, men med nye variabler.
 
-
-
-
-```{r summary_hoyde_min_og_max_inntekt}
-summary(hoyde_min_og_max_inntekt)
-```
-
-```{r lm_av_inntektene}
-lm_min <- (lm(inntekt ~ height_cm, data = hoyde_min_inntekt))
-lm_max <- (lm(inntekt ~ height_cm, data = hoyde_max_inntekt))
-lm_min_og_max <- (lm(inntekt ~ height_cm,
-                     data = hoyde_min_og_max_inntekt))
-```
-
-```{r huxreg_inntekt}
-huxreg(
-  list("Min"=lm_min, "Max"=lm_max, "Min_og_Max"=lm_min_og_max),
-  error_format = "[{statistic}]")
-```
-
-----------------------
+*lm_hoyde_filtrert* er datasettet uten 0 inntekt og 2% topp, men med nye variabler.
 
 ```{r lm_av_mutert_datasett}
-lm_hoyde <- (lm(inntekt ~ height_cm + weight_kg + marital + bmi,
+lm_hoyde <- (lm(
+  inntekt ~ height_cm + weight_kg + marital + bmi,
                 data = hoyde))
-lm_hoyde_filtrert <- (lm(inntekt ~ height_cm + weight_kg + marital + bmi,
+lm_hoyde_filtrert <- (lm(
+  inntekt ~ height_cm + weight_kg + marital + bmi,
                          data = hoyde_filtrert))
 ```
+
+Setter opp til liste med avvik innenfor statestikk. Gir navn til tabellene våres for bedre oversikt.
 
 ```{r huxreg_mutert_datasett}
 huxreg(
@@ -275,10 +260,19 @@ huxreg(
   error_format = "[{statistic}]")
 ```
 
+Ser at det er en betraktelig forskjell mellom *hoyde* med det fulle datasettet, og *hoyde_filtrert* som er datasettet uten 0 inntekt og 2% topp.
 
+De faktorene som er mest akutelle for studien denne innleveringen baserer seg på er:
 
+*height_cm*, *weight_kg*, *N*, *R^2*
 
+Vi ser ut fra tabellene at disse fire faktorene er alle blitt påvirket i stor grad. Inntekt fra *høyde* har falt nesten 10 000kr pr cm, i tillegg til å gå ifra **p < 0.001** signifikans nivå til **p < 0.01** signifikans nivå. Vekt har gått ifra **p < 0.05** til ingen signifikans. N har gått ned ifra **6911 kr pr cm**, til **5054 kr pr cm**. R^2 har gått ifra **0.88** ned til **0.82**.
 
+Det vi kan tolke ut fra dette er at 0 inntekt og 2% topp inntekt har hatt ein betydelig påvirkening på studien til Judge & Cable.
+
+---
+
+# To do list:
 
 ## Test av robusthet
 

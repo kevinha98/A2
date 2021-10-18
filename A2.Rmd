@@ -223,10 +223,6 @@ hoyde_filtrert <- hoyde_min_og_max_inntekt %>%
 
 # To do list:
 
-### Gift - ikke gift
-
-
-
 #### Hux Reg
 
 ### Test av robusthet

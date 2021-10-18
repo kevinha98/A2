@@ -239,6 +239,47 @@ summary(hoyde_filtrert)
 
 ## Hux Reg
 
+
+
+
+
+```{r summary_hoyde_min_og_max_inntekt}
+summary(hoyde_min_og_max_inntekt)
+```
+
+```{r lm_av_inntektene}
+lm_min <- (lm(inntekt ~ height_cm, data = hoyde_min_inntekt))
+lm_max <- (lm(inntekt ~ height_cm, data = hoyde_max_inntekt))
+lm_min_og_max <- (lm(inntekt ~ height_cm,
+                     data = hoyde_min_og_max_inntekt))
+```
+
+```{r huxreg_inntekt}
+huxreg(
+  list("Min"=lm_min, "Max"=lm_max, "Min_og_Max"=lm_min_og_max),
+  error_format = "[{statistic}]")
+```
+
+----------------------
+
+```{r lm_av_mutert_datasett}
+lm_hoyde <- (lm(inntekt ~ height_cm,
+                data = hoyde))
+lm_hoyde_filtrert <- (lm(inntekt ~ height_cm,
+                         data = hoyde_min_og_max_inntekt))
+```
+
+```{r huxreg_mutert_datasett}
+huxreg(
+  list("hoyde"=lm_hoyde, "hoyde_filtrert"=lm_hoyde_filtrert),
+  error_format = "[{statistic}]")
+```
+
+
+
+
+
+
 ## Test av robusthet
 
 ## Ein modell med interaksjon mht. variabelen "sex"

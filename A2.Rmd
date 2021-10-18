@@ -21,6 +21,8 @@ library(modelr)
 library(ggplot2)
 library(knitr)
 library(dplyr)
+library(car)
+library(huxtable)
 options(scipen = 999)
 ```
 
@@ -203,6 +205,12 @@ hoyde <- hoyde %>%
 )
 ```
 
+Oppsummerer resultatet via *summary()*
+
+```{r summary_nye_variabler_hele_datasettet}
+summary(hoyde)
+```
+
 Filtrert datasett, nye variabler, BMI og gift - ikke gift:
 
 ```{r nye_variable_filtrert_datasett}
@@ -219,6 +227,12 @@ hoyde_filtrert <- hoyde_min_og_max_inntekt %>%
         TRUE ~ FALSE)
     )
   )
+```
+
+Oppsummerer resultatet via *summary()*
+
+```{r summary_nye_variable_filtrert_datasett}
+summary(hoyde_filtrert)
 ```
 
 # To do list:

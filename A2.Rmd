@@ -263,10 +263,10 @@ huxreg(
 ----------------------
 
 ```{r lm_av_mutert_datasett}
-lm_hoyde <- (lm(inntekt ~ height_cm,
+lm_hoyde <- (lm(inntekt ~ height_cm + weight_kg + marital + bmi,
                 data = hoyde))
-lm_hoyde_filtrert <- (lm(inntekt ~ height_cm,
-                         data = hoyde_min_og_max_inntekt))
+lm_hoyde_filtrert <- (lm(inntekt ~ height_cm + weight_kg + marital + bmi,
+                         data = hoyde_filtrert))
 ```
 
 ```{r huxreg_mutert_datasett}

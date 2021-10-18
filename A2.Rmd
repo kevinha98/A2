@@ -11,6 +11,7 @@ output:
   html_document:
     df_print: paged
   pdf_document: default
+lang: no-NB
 ---
 
 ```{r setup, message=FALSE, echo = FALSE}
@@ -29,17 +30,17 @@ Dette er oppgave 2 i kurset MSB105 Data Science. I den følgende artikkelen anve
 
 ## En kort litteraturgjennomgang på ca. 1 side
 
-I Judge og Cable fra 2004 @judgeEffectPhysicalHeight2004, kommer de med utsagnet at "høgde påvirker inntekten" er ved første øyenkast en gammel myte, men at det kanskje er mer til det enn man først skulle trodd. For å støtte dette utsagnet referer de til Robert & Herman sin forskning som viser til at høyde er et trekk som er ettertraktet i en sosial sammenheng.
+I Judge og Cable fra 2004 @judgeEffectPhysicalHeight2004, kommer de med utsagnet at "høyde påvirker inntekten" er ved første øyenkast en gammel myte, men at det kanskje er mer til det enn man først skulle trodd. For å støtte dette utsagnet referer de til Robert & Herman sin forskning som viser til at høyde er et trekk som er ettertraktet i en sosial sammenheng.
 
 Denne forskningen mener også at mennesker som er høyere er mer overbevisende. De viser også til @highamRiseFallPoliticians1992 som påstår at høye folk er mer sannsynlig til å komme i ein lederstilling. Judge & Cable teoriserer at dette muligens har røtter i biologi, ettersom at høyde i naturen er en måling får styrke.
 
 En studie utført av Kurtz @burnsRetailSalespersonsInquiry1993 viste at 78% av ansettelser innen salg, var mennesker med over gjennomsnittlig høyde. Dette ble argumentert av rekrutterene å være fordi mennesker over gjennomsnittlig høyde ville være mer utmerket ovenfor kundene, i forhold til små mennesker.
 
-Jugdge og Cable @judgeEffectPhysicalHeight2004, ville svare på dette med å utføre en studie med tre hovedpunkter. Først fremstille en modell som viser **sammenhengen/forholdet** mellom høyde og karrieresuksess. De begrunnet dette med at dee ikke var blitt utført tidlegere. Steg to var å utføre en metaanalyse på tidlegere analyser og litteratur for å se etter generelle implikasjoner. Siste steget var å utføre fire nye undersøkelser på **sammenhengen/forholdet** mellom en persons høyde og inntekt.
+Jugdge og Cable @judgeEffectPhysicalHeight2004, ville svare på dette med å utføre en studie med tre hovedpunkter. Først fremstille en modell som viser forholdet mellom høyde og karrieresuksess. De begrunnet dette med at dee ikke var blitt utført tidlegere. Steg to var å utføre en metaanalyse på tidlegere analyser og litteratur for å se etter generelle implikasjoner. Siste steget var å utføre fire nye undersøkelser på forholdet mellom en persons høyde og inntekt.
 
-Argumentet for å se på **sammenhengen/forholdet** mellom en persons høyde og inntekt var fordi de anså inntekt som den primære faktoren for karrieresuksess. Men i følge @EMPIRICALINVESTIGATIONPREDICTORS og @whitelyRelationshipCareerMentoring1991, så er det nesten ingen støttende forskning på dette.
+Argumentet for å se på sammenhengen/forholdet mellom en persons høyde og inntekt var fordi de anså inntekt som den primære faktoren for karrieresuksess. Men i følge @EMPIRICALINVESTIGATIONPREDICTORS og @whitelyRelationshipCareerMentoring1991, så er det nesten ingen støttende forskning på dette.
 
-Jugde og Cable @judgeEffectPhysicalHeight2004, tok i sin undersøkelse utgangspunkt i flere menneskelige faktorer for å produsere sin modell for **sammenhengen/forholdet** mellom en persons høyde og inntekt.
+Jugde og Cable @judgeEffectPhysicalHeight2004, tok i sin undersøkelse utgangspunkt i flere menneskelige faktorer for å produsere sin modell for forholdet mellom en persons høyde og inntekt.
 
 Noen av punktene de så på var selvtillit og sosial rang. Judge & Cable @judgeEffectPhysicalHeight2004 mente dette var to viktige punkter i analysen fordi disse to faktorene påvirker en persons arbeidsinnsats og hvordan en person blir behandlet i arbeidslivet av arbeidsgiveren. Dette mente faktorene ville påvirke en persons suksess i arbeidslivet, og medføre at en høyere person ville ha høyere inntekt enn en lavere person.
 
@@ -48,10 +49,11 @@ Modellen til Judge og Cable @judgeEffectPhysicalHeight2004, kom frem til at det 
 For å støtte opp under dette grunnlaget for modellen, henviste de til flere tidlegere studier gjort rundt høyde, karrieremuligheter og suksess, samt til flere andre studier om hvordan selvtillit blir påvirket av ulike personlige faktorer.
 
 Studien som Judge og Cable @judgeEffectPhysicalHeight2004 gjennomførte konkluderte med at det var en direkte sammenheng mellom en persons høyde og inntekt. I senere tid har dette resultatet blitt sett på og folk mener at sunn fornuft tilsier at dette ikke kan stemme eller at det må være andre eller flere faktorer som spiller inn.
---
 
 ## Analyse med egen versjon av datasettet
+
 I henhold til oppgaveteksten, angir vi datasettet for *hoyde*.
+
 ```{r hoyde, echo=TRUE}
 # Vi selekterer ut dataene for heights fra pakken modelr, og angir deretter benevnelsen "hoyde"
 
@@ -67,6 +69,7 @@ kable(summary(hoyde[,9:10]))
 ```
 
 ### Beskrivende statistikk (beskrivelse av dataer)
+
 Datasettet vi bruker, *modelr* er hentet fra National Longitudinal Study, som er sponset av U.S. Bureau of Labor Statistics. Dataene stammer fra 2012.
 Følgende er forklaringene på variablene:
 
@@ -87,16 +90,20 @@ ggplot(data = hoyde,
   geom_histogram()
 
 ```
+
 Her ser vi noen utliggere på høyresiden. Dette er 143 observasjoner av personer som tjener rett under 3MNOK. De skiller seg fra resten av observasjonene i histogrammet grunnet at både median- og snittlønn er langt lavere.
 
 Vi har også personer *uten* inntekt i datasettet.
 
-### Regresjonsanalyse
+### Regresjonsanalyser
+
 ```{r regresjonanalyse}
 (lm(inntekt ~ height_cm, data = hoyde)) %>%
   summary()
 ```
+
 Her ser vi at en økning i høyden på 1 cm, gir 9978.5 kr mer i årlig inntekt. La oss prøve med datasett uten de 2% med toppinntekt, og uten de med inntekt = 0.
+
 ```{r}
 # Nå filtrerer vi ut de observasjonene med inntekt lavere enn 1,6MNOK. Vi ser da under "Environment" at vi sitter igjen med 6863 observasjoner i datasettet "hoyde_max_inntekt".
 
@@ -109,12 +116,16 @@ ggplot(data = hoyde_max_inntekt,
        aes(x = inntekt)) + 
   geom_histogram()
 ```
+
 Her ser vi at utliggerne forsvinner, ettersom den vannrette aksen kun viser observasjoner hvor inntekt er lavere enn 1.600.000.
+
 ```{r regresjonanalyse2}
 (lm(inntekt ~ height_cm, data = hoyde_max_inntekt)) %>%
   summary()
 ```
+
 Her ser vi at en økning i høyden på 1 cm, gir 5828.4 kr mer i årlig inntekt.
+
 ```{r}
 # Nå filtrerer vi ut de observasjonene med inntekt høyere enn 0. Vi ser da under "Environment" at vi sitter igjen med 6863 observasjoner i datasettet "hoyde_max_inntekt".
 
@@ -132,9 +143,10 @@ ggplot(data = hoyde_min_inntekt,
 (lm(inntekt ~ height_cm, data = hoyde_min_inntekt)) %>%
   summary()
 ```
+
 Her ser vi at en økning i høyden på 1 cm, gir 11122.9 kr mer i årlig inntekt.
 
-# Forklaring til Ytterliggere i *plots* (Prøver å unngå Merge Conflict)
+#### Forklaring til Ytterliggere i *plots* (Prøver å unngå Merge Conflict)
 
 Som vi ser ut fra grafen er det en stor ujevnhet. I datasettet er den største andelen av observasjonene fra ca 700 000 kroner og ned, med en mindre andel over dette. 143 observasjoner har rett i underkant av 3 millioner kroner. Dette er det den høyre ytterliggenheten i datasettet.
 
@@ -142,6 +154,30 @@ Vi har også med observasjoner *uten* lønn. Dette er den venstre ytterliggenhet
 
 Disse ytterliggenhetene påvirker resultatet av analysen. Disse to ekstreme observasjonene resulterer at sammenhengen mellom høyde og snitt- og medianlønn blir feilaktig fremstilt. Vi får dermed feil informasjon ut av dataene vi analyserer. Vi får tilfeller der en lav person er arbeidsledig eller at en høy person har langt høyere inntekt, slik som analysen fra National Longitudinal Study kom frem til.
 
-
 For å finne et mer reelt resultat må vi se vekk ifra de ekstreme ytterliggenhetene. I dette tilfellet vil resultat blir reelt om vi ser vekk ifra både 0 inntekt og 3 millioner i inntekt. Dette vil vi gjøre **senere/videre** i oppgaven.
---
+
+# To do list:
+
+## Mutate
+
+## høyde_cm og vekt_kg vha. mutate funksjon
+
+## BMI-Variabel
+
+## Gift - ikke gift
+
+### Hux Reg
+
+## Test av robusthet
+
+## Ein modell med interaksjon mht. variabelen "sex"
+
+## Test av koefisient ved linearHypothesis() (car pakken)
+
+## Residualene fra endelig modell skal legges til datasettet hoyde. height_cm skal plottes mot residualenefor ‘facet_grid(sex ~ factor(married, labels = c(“not married,” “married”)))
+
+## ggPlot av samtlige observasjoner. Svak bakgrunn (opacity)
+
+# Konklusjon
+
+# Referanser

@@ -223,17 +223,17 @@ hoyde_filtrert <- hoyde_min_og_max_inntekt %>%
 
 # To do list:
 
-#### Hux Reg
+## Hux Reg
 
-### Test av robusthet
+## Test av robusthet
 
-### Ein modell med interaksjon mht. variabelen "sex"
+## Ein modell med interaksjon mht. variabelen "sex"
 
-### Test av koefisient ved linearHypothesis() (car pakken)
+## Test av koefisient ved linearHypothesis() (car pakken)
 
-### Residualene fra endelig modell skal legges til datasettet hoyde. height_cm skal plottes mot residualenefor ‘facet_grid(sex ~ factor(married, labels = c(“not married,” “married”)))
+## Residualene fra endelig modell skal legges til datasettet hoyde. height_cm skal plottes mot residualenefor ‘facet_grid(sex ~ factor(married, labels = c(“not married,” “married”)))
 
-### ggPlot av samtlige observasjoner. Svak bakgrunn (opacity)
+## ggPlot av samtlige observasjoner. Svak bakgrunn (opacity)
 
 # Konklusjon
 

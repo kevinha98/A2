@@ -20,7 +20,6 @@ library(modelr)
 library(ggplot2)
 library(knitr)
 library(dplyr)
-library(cars)
 options(scipen = 999)
 ```
 
@@ -181,9 +180,31 @@ For å finne et mer reelt resultat må vi se vekk ifra de ekstreme ytterliggenhe
 
 ## Mutate
 
-### høyde_cm og vekt_kg vha. mutate funksjon
+Vi lager to nye datasett med nye variabler ved å bruke *mutate()* funksjonen. Et datasett der vi tar med hele tidlegere datasettet, dvs. med 0 inntekt og topp 2%. Vi lager så enda et datasett der vi tar uten 0 inntekt og topp 2%.
 
-### BMI-Variabel
+*tommer* er 2.54cm
+*pund* er 450g, eller 0.45kg
+
+Helt datasett, nye variabler
+```{r nye_variabler_hele_datasettet}
+hoyde <- hoyde %>% 
+  mutate(
+    height_cm = 2.54 * height,
+    weight_kg = weight * 0.45,
+    bmi = (weight / (height_cm / 100)^2)
+  )
+```
+
+Filtrert datasett, nye variabler
+
+```{r nye_variable_filtrert_datasett}
+hoyde_filtrert <- hoyde_min_og_max_inntekt %>% 
+  mutate(
+    height_cm = 2.54 * height,
+    weight_kg = weight * 0.45,
+    bmi = (weight / (height_cm / 100)^2)
+  )
+```
 
 ### Gift - ikke gift
 

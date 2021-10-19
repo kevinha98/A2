@@ -276,6 +276,9 @@ Det vi kan tolke ut fra dette er at 0 inntekt og 2% topp inntekt har hatt ein be
 
 ## Test av robusthet
 
+Vi kan beregne hvor robust en undersøkelse er ved å se på t-verdien.
+
+
 ## Ein modell med interaksjon mht. variabelen "sex"
 
 ## Test av koefisient ved linearHypothesis() (car pakken)

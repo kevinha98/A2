@@ -279,6 +279,10 @@ Det vi kan tolke ut fra dette er at 0 inntekt og 2% topp inntekt har hatt ein be
 ## Ein modell med interaksjon mht. variabelen "sex"
 
 ## Test av koefisient ved linearHypothesis() (car pakken)
+```{r}
+model <- lm((log(inntekt ~ height_cm, data = hoyde)
+linearHypothesis(model, c("", ""))
+```
 
 ## Residualene fra endelig modell skal legges til datasettet hoyde. height_cm skal plottes mot residualenefor ‘facet_grid(sex ~ factor(married, labels = c(“not married,” “married”)))
 

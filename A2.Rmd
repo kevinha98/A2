@@ -275,6 +275,9 @@ Det vi kan tolke ut fra dette er at 0 inntekt og 2% topp inntekt har hatt en bet
 # To do list:
 
 ## Test av robusthet
+Robushets refereres til styrken av den anvendte statistiske modellen, og kan eksempelvis være å utføre en t-test. Dette type testen er en hypotesetest og brukes for å teste hvorvidt gjennomsnitssverdien i et normalfordelt datasatt er signifikant forskjellig fra en nullhypotese.  Det finnes ut varianter av t-tester; *paret t-test* og *uavhengig t-test* og vi vil her demonstrere ___.
+
+Vi må først definere $H_0$ og $H_1$, og deretter tar vi en titt på t-verdiene til de ulike variablene og ser om de er signifikante.
 
 ## Ein modell med interaksjon mht. variabelen "sex"
 

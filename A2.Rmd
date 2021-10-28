@@ -279,6 +279,15 @@ Robushets refereres til styrken av den anvendte statistiske modellen, og kan eks
 
 Vi må først definere $H_0$ og $H_1$, og deretter tar vi en titt på t-verdiene til de ulike variablene og ser om de er signifikante.
 
+
+
+
+
+
+
+Vi kan beregne hvor robust en undersøkelse er ved å se på t-verdien.
+
+
 ## Ein modell med interaksjon mht. variabelen "sex"
 
 ## Test av koefisient ved linearHypothesis() (car pakken)

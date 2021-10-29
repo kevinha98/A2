@@ -311,6 +311,12 @@ lm3 <- lm(modell_3, data = hoyde_min_inntekt)
 summary(lm3)
 ```
 
+Test av koeffisienter:
+
+```{r}
+linearHypothesis(lm3, c("sexfemale = 0", "sexfemale:height_cm = 0"))
+```
+
 Modeller uten topp 2% inntekt:
 
 ```{r Modell_4}
@@ -334,6 +340,13 @@ modell_6 <- "inntekt ~ sex*height_cm + weight + marital"
 lm6 <- lm(modell_6, data = hoyde_max_inntekt)
 summary(lm6)
 ```
+
+Test av koeffisienter:
+
+```{r}
+linearHypothesis(lm6, c("sexfemale = 0", "sexfemale:height_cm = 0"))
+```
+
 
 ### Kommentarer til modellene ovenfor.
 
@@ -373,6 +386,13 @@ lm9 <- lm(modell_9, data = hoyde_filtrert)
 summary(lm9)
 ```
 
+Test av koeffisienter:
+
+```{r}
+linearHypothesis(lm9, c("sexfemale = 0", "sexfemale:height_cm = 0"))
+```
+
+
 ### Kommentar til modell 7, 8 og 9
 
 I modell 7 ser vi samme tendens som i modell 1 og 4, der høyde har en stor betydning. Men så ser vi her på modell 8 og 9 uten både 0 inntekt og topp 2% inntekt. t-verdien til høyde har kollapset. Den er nå i modell 9 under 1.92 som er den gylne standarden for t-verdier. Signifikans nivået har også kollapset fra 0.001 nivå helt ned til et 0.1 nivå. Med andre ord, høyde er faktisk ikke lengre signifikant, da de fleste modeller oppererer på et 5% nivå for å være signifikant.
@@ -382,12 +402,6 @@ Vi ser dermed at når vi ser vekk fra de arbeidsledige samt topp 2% inntektsgrup
 # Residualer til datasettet "hoyde"
 
 Vi velger å bruke modell 9, da denne er mest realistisk og inneholder mest informasjon.
-
-```{r}
-lm9 <- modell_9, data = hoyde_filtrert
-summary(lm9)
-```
-
 
 ```{r}
 hoyde_filtrert <- hoyde %>% 

@@ -423,7 +423,24 @@ Residualene fra endelig modell skal legges til datasettet hoyde. height_cm skal 
 Høyr med Arnstein om detta her e rett
 -
 
-## ggPlot av samtlige observasjoner. Svak bakgrunn (opacity)
+# GGplot av observasjonene, med svak bakgrunn.
+
+```{r}
+ggplot(data = hoyde_filtrert,
+  mapping = aes(
+    x = height_cm,
+    y = inntekt)) +
+geom_point(
+  data = hoyde_filtrert,
+  mapping = aes(
+    x = height_cm,
+    y = resid),
+  colour = "grey30",
+  size = 0.3
+) +
+facet_grid(sex ~ factor(married, labels = c("not married", "married")))
+```
+
 
 # Konklusjon
 

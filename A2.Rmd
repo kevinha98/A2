@@ -307,6 +307,20 @@ modell_3 <- hoyde_min_inntekt
   summary()
 ```
 
+---
+Spør Arnstein, får ikkje detta her te å fungera
+Test av koeffisienter, modell 3
+
+```{r}
+lm3 <- lm(modell_3, data = hoyde_min_inntekt)
+summary(lm3)
+```
+
+```{r}
+linearHypothesis(lm3, c("sexfemale = 0", "sexfemale:hoyde_cm = 0"))
+```
+---
+
 Modeller uten topp 2% inntekt:
 
 ```{r modell_4}

@@ -287,27 +287,43 @@ $H_1: xx$
 
 Modeller uten 0 inntekt:
 
-```{r}
+```{r modell_1}
 modell_1 <- hoyde_min_inntekt
   lm(inntekt ~ height_cm, data = hoyde_min_inntekt) %>% 
   summary()
 ```
 
-```{r}
+```{r modell_2}
 modell_2 <- hoyde_min_inntekt
   lm(inntekt ~ height_cm + weight + marital, data = hoyde_min_inntekt) %>% 
   summary()
 ```
 
-```{r}
+```{r modell_3_med_sex}
 modell_3 <- hoyde_min_inntekt
-  lm(inntekt ~ height_cm + weight + marital, data = hoyde_min_inntekt) %>% 
+  lm(inntekt ~ sex*height_cm + weight + marital, data = hoyde_min_inntekt) %>% 
   summary()
 ```
 
-
 Modeller uten topp 2% inntekt:
 
+```{r modell_4}
+modell_4 <- hoyde_max_inntekt
+  lm(inntekt ~ height_cm, data = hoyde_max_inntekt) %>% 
+  summary()
+```
+
+```{r modell_5}
+modell_5 <- hoyde_max_inntekt
+  lm(inntekt ~ height_cm, data = hoyde_max_inntekt) %>% 
+  summary()
+```
+
+```{r modell_6_med_sex}
+modell_6 <- hoyde_max_inntekt
+  lm(inntekt ~ sex*height_cm + weight + marital, data = hoyde_max_inntekt) %>% 
+  summary()
+```
 
 
 Vi kan beregne hvor robust en undersøkelse er ved å se på t-verdien.

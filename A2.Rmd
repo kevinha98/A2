@@ -408,8 +408,20 @@ hoyde_filtrert <- hoyde %>%
   add_residuals(lm9)
 ```
 
+-
 
-## Residualene fra endelig modell skal legges til datasettet hoyde. height_cm skal plottes mot residualenefor ‘facet_grid(sex ~ factor(married, labels = c(“not married,” “married”)))
+```{r}
+hoyde_filtrert %>% 
+  head(n=10)
+```
+
+--
+Residualene fra endelig modell skal legges til datasettet hoyde. height_cm skal plottes mot residualenefor ‘facet_grid(sex ~ factor(married, labels = c(“not married,” “married”)))
+--
+
+-
+Høyr med Arnstein om detta her e rett
+-
 
 ## ggPlot av samtlige observasjoner. Svak bakgrunn (opacity)
 

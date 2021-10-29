@@ -254,6 +254,9 @@ lm_hoyde_filtrert <- (lm(
 
 Setter opp til liste med avvik innenfor statistikk. Gir navn til tabellene våres for bedre oversikt.
 
+**hoyde** er med alle observasjoner
+**hoyde_filtrert** er uten 0 inntekt og topp 2%
+
 ```{r huxreg_mutert_datasett}
 huxreg(
   list("hoyde"=lm_hoyde, "hoyde_filtrert"=lm_hoyde_filtrert),
@@ -279,9 +282,31 @@ Robushets refereres til styrken av den anvendte statistiske modellen, og kan eks
 
 Vi må først definere $H_0$ og $H_1$, og deretter tar vi en titt på t-verdiene til de ulike variablene og ser om de er signifikante.
 
+$H_0: xx$
+$H_1: xx$
+
+Modeller uten 0 inntekt:
+
+```{r}
+modell_1 <- hoyde_min_inntekt
+  lm(inntekt ~ height_cm, data = hoyde_min_inntekt) %>% 
+  summary()
+```
+
+```{r}
+modell_2 <- hoyde_min_inntekt
+  lm(inntekt ~ height_cm + weight + marital, data = hoyde_min_inntekt) %>% 
+  summary()
+```
+
+```{r}
+modell_3 <- hoyde_min_inntekt
+  lm(inntekt ~ height_cm + weight + marital, data = hoyde_min_inntekt) %>% 
+  summary()
+```
 
 
-
+Modeller uten topp 2% inntekt:
 
 
 

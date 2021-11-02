@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.10.30)  30 OCT 2021 19:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.2)  2 NOV 2021 13:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **A2.tex
 (./A2.tex
 LaTeX2e <2021-06-01> patch level 1
-L3 programming layer <2021-10-18> (/Users/kevinha/Library/TinyTeX/texmf-dist/te
-x/latex/base/article.cls
+L3 programming layer <2021-10-18> (/Users/ag/Library/TinyTeX/texmf-dist/tex/lat
+ex/base/article.cls
 Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/base/size12.clo
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count182
@@ -22,23 +22,23 @@ File: size12.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count190
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/04/20 v2.17j AMS math features
 \@mathmargin=\skip49
 For additional information on amsmath, use the `?' option.
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen139
-)) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen140
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count191
@@ -78,16 +78,16 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+)) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -121,27 +121,27 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
 2.
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
+)) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks21
 \inpenc@posthook=\toks22
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
@@ -153,64 +153,57 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-)
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.st
-y
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks23
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.st
-y
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekey
-s.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.st
-y
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.st
-y
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen148
 \Hy@linkcounter=\count269
 \Hy@pagecounter=\count270
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref-langpatc
-hes.def
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref-langpatches.d
+ef
 File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
 nguages
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count271
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -224,17 +217,15 @@ Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
 \c@Hy@tempcnt=\count272
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen149
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.st
-y
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
@@ -250,7 +241,7 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6101.
 Package hyperref Info: PDF/A mode OFF on input line 6106.
 LaTeX Info: Redefining \ref on input line 6146.
 LaTeX Info: Redefining \pageref on input line 6150.
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -259,9 +250,9 @@ package with kernel methods
 \c@Hfootnote=\count276
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
@@ -269,21 +260,21 @@ with kernel methods
 \Fld@listcount=\count277
 \c@bookmark@seq@number=\count278
 
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilech
-eck.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.s
+ty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecoun
-ter.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.s
+ty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
 \Hy@SectionHShift=\skip52
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count279
@@ -298,7 +289,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen158
 \Gm@layoutvoffset=\dimen159
 \Gm@dimlist=\toks24
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2021/10/15 v3.9 verbatim text (tvz,hv)
 \FV@CodeLineNo=\count282
 \FV@InFile=\read2
@@ -306,14 +297,14 @@ Package: fancyvrb 2021/10/15 v3.9 verbatim text (tvz,hv)
 \c@FancyVerbLine=\count283
 \FV@StepNumber=\count284
 \FV@OutFile=\write3
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip53
 \fb@frw=\dimen160
 \fb@frh=\dimen161
 \FrameRule=\dimen162
 \FrameSep=\dimen163
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
 \LTleft=\skip54
 \LTright=\skip55
@@ -331,7 +322,7 @@ Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
 \c@LT@tables=\count288
 \c@LT@chunks=\count289
 \LT@p@ftn=\toks25
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen165
 \lightrulewidth=\dimen166
@@ -350,7 +341,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count292
 \@lastruleclass=\count293
 \@thisrulewidth=\dimen177
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
 \col@sep=\dimen178
 \ar@mcellbox=\box58
@@ -359,7 +350,7 @@ Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
 \extratabsurround=\skip58
 \backup@length=\skip59
 \ar@cellbox=\box59
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count294
 \calc@Bcount=\count295
@@ -371,18 +362,17 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count296
 \calc@Cskip=\skip62
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box60
 \fn@width=\dimen182
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cf
-g
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
@@ -393,9 +383,9 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \cslhangindent=\skip63
 \csllabelwidth=\skip64
 \cslentryspacingunit=\skip65
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \captionmargin=\dimen185
 \captionmargin@=\dimen186
@@ -410,9 +400,9 @@ Package caption Info: Standard document class detected.
 \c@continuedfloat=\count298
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/caption/ltcaption.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
-)) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/siunitx/siunitx.sty
+)) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2021-10-26 v3.0.34 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen192
 \l__siunitx_angle_marker_box=\box61
@@ -436,18 +426,16 @@ Package: siunitx 2021-10-26 v3.0.34 A comprehensive (SI) units package
 \l__siunitx_unit_position_int=\count306
 \l__siunitx_unit_total_int=\count307
 
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys
-2e.sty (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.st
+y (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2021-10-18 L3 programming layer (loader) 
-
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex
-.def
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count308
 \l__pdf_internal_box=\box68
 ))
 Package: l3keys2e 2021-08-27 LaTeX2e option processing using LaTeX3 keys
-)) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+)) (/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box69
 \UL@hyphenbox=\box70
 \UL@skip=\skip66
@@ -458,19 +446,19 @@ Package: l3keys2e 2021-08-27 LaTeX2e option processing using LaTeX3 keys
 \ULC@box=\box71
 Package: ulem 2019/11/18
 \ULdepth=\dimen199
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks28
 \minrowclearance=\skip67
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip68
 \multirow@cntb=\count310
 \multirow@dima=\skip69
 \bigstrutjot=\dimen256
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/tools/hhline.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@col@width=\dimen257
 \TX@old@table=\dimen258
@@ -480,34 +468,34 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@cols=\count311
 \TX@ftn=\toks29
 )
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/threeparttable/threepartta
-ble.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/threeparttable/threeparttable.s
+ty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box72
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen262
 \WF@size=\dimen263
 \c@WF@wrappedlines=\count312
 \WF@box=\box73
 \WF@everypar=\toks30
 Package: wrapfig 2003/01/31  v 3.6
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/Us
-ers/kevinha/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/Users/a
+g/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks31
 \XKV@tempa@toks=\toks32
 )
 \XKV@depth=\count313
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+)) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/adjustbox/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 -ends (calc, etex, pgfmath)
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/adjustbox/trimclip.sty
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/adjustbox/trimclip.sty
 Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/collectbox/collectbox.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box74
 )
@@ -516,7 +504,7 @@ Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \tc@urx=\dimen266
 \tc@ury=\dimen267
 Package trimclip Info: Using driver 'tc-pdftex.def'.
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen268
@@ -527,27 +515,24 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 \adjbox@pheight=\dimen273
 \adjbox@pdepth=\dimen274
 \adjbox@ptotalheight=\dimen275
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box75
+\sift@deathcycles=\count314
+\@vwid@loff=\dimen276
+\@vwid@roff=\dimen277
+)) (/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2021/10/19 3.65 The Babel package
-\babel@savecnt=\count314
-\U@D=\dimen276
-\l@unhyphenated=\language3
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def)
+\babel@savecnt=\count315
+\U@D=\dimen278
+\l@unhyphenated=\language31
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
-\bbl@dirlevel=\count315
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/babel-norsk/norsk.ldf
+\bbl@dirlevel=\count316
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/babel-norsk/norsk.ldf
 Language: norsk 2012/08/06 v2.0i Norsk support from the babel system
-
-Package babel Warning: No hyphenation patterns were preloaded for
-(babel)                the language 'Norsk' into the format.
-(babel)                Please, configure your TeX system to add them and
-(babel)                rebuild the format. Now I will use the patterns
-(babel)                preloaded for \language=0 instead on input line 49.
-
-Package babel Info: Hyphen rules for 'norsk' set to \l@english
-(babel)             (\language0). Reported on input line 50.
 Package babel Info: Making " an active character on input line 113.
-) (/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/babel-norsk/norsk.ldf
+) (/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/babel-norsk/norsk.ldf
 Language: norsk 2012/08/06 v2.0i Norsk support from the babel system
 )) (./A2.aux)
 \openout1 = `A2.aux'.
@@ -570,11 +555,9 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 177.
 LaTeX Font Info:    ... okay on input line 177.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 177.
 LaTeX Font Info:    ... okay on input line 177.
-
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base
-.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/grfext/grfext.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/grfext/grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -583,23 +566,21 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
-
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.c
-fg
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 177.
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitles
-tring.sty
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring
+.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count316
+\c@section@level=\count317
 )
 LaTeX Info: Redefining \ref on input line 177.
 LaTeX Info: Redefining \pageref on input line 177.
@@ -648,22 +629,22 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
 79.
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
 79.
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
 179.
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
 179.
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -674,30 +655,29 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 179.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 179
 .
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 179
 .
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/Users/kevinha/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] 
-[2]
+{/Users/ag/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
 60.
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
 263.
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmtt.fd
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
 05.
-(/Users/kevinha/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+(/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [3]
 <A2_files/figure-latex/histogram-1.pdf, id=98, 469.755pt x 325.215pt>
@@ -810,54 +790,170 @@ Overfull \hbox (5.67819pt too wide) in paragraph at lines 1259--1259
 000000003854 ***[] 
  []
 
-[17] [18] [19] [20]
-Overfull \hbox (465.18887pt too wide) in alignment at lines 1824--1826
- [] 
+[17] [18] [19]
+Overfull \hbox (18.07022pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ##                             Estimate Std. Error t value   
+          Pr(>|t|)[] 
  []
 
 
-Overfull \hbox (465.18887pt too wide) in alignment at lines 1826--1833
- [] 
+Overfull \hbox (18.05621pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## (Intercept)                -522379.0   678234.7  -0.770   
+          0.441215[] 
+ []
+
+
+Overfull \hbox (18.0422pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## sexfemale                   -22303.4   875111.8  -0.025   
+          0.979668[] 
+ []
+
+
+Overfull \hbox (18.0422pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## height_cm                     1938.9     3735.2   0.519   
+          0.603718[] 
+ []
+
+
+Overfull \hbox (18.05621pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## weight_kg                     -740.3     3539.2  -0.209   
+          0.834312[] 
+ []
+
+
+Overfull \hbox (18.0352pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## maritalmarried              179097.9    14336.2  12.493 < 
+0.0000000000000002[] 
+ []
+
+
+Overfull \hbox (18.0422pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## maritalseparated             39709.8    28043.0   1.416   
+          0.156828[] 
+ []
+
+
+Overfull \hbox (18.05621pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## maritaldivorced              92214.0    17123.0   5.385   
+      0.0000000756[] 
+ []
+
+
+Overfull \hbox (18.04921pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## maritalwidowed                3518.1    60988.4   0.058   
+          0.954002[] 
+ []
+
+
+Overfull \hbox (18.0352pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## bmi                            862.5     5117.0   0.169   
+          0.866148[] 
+ []
+
+
+Overfull \hbox (18.05621pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## education                    48981.1     2021.9  24.225 < 
+0.0000000000000002[] 
+ []
+
+
+Overfull \hbox (18.04921pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## age                          -2465.0     2211.7  -1.115   
+          0.265090[] 
+ []
+
+
+Overfull \hbox (18.0352pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## sexfemale:height_cm            324.5     4996.2   0.065   
+          0.948214[] 
+ []
+
+
+Overfull \hbox (18.0282pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## sexfemale:weight_kg           -481.9     4900.1  -0.098   
+          0.921656[] 
+ []
+
+
+Overfull \hbox (18.04921pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## sexfemale:maritalmarried   -177530.8    20970.0  -8.466 < 
+0.0000000000000002[] 
+ []
+
+
+Overfull \hbox (18.05621pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## sexfemale:maritalseparated  -93873.1    37895.8  -2.477   
+          0.013277[] 
+ []
+
+
+Overfull \hbox (18.04921pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## sexfemale:maritaldivorced   -77997.3    24072.9  -3.240   
+          0.001203[] 
+ []
+
+
+Overfull \hbox (18.0282pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## sexfemale:maritalwidowed     -6488.9    67844.0  -0.096   
+          0.923807[] 
+ []
+
+[20]
+Overfull \hbox (18.0422pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## sexfemale:bmi                 -300.8     6533.1  -0.046   
+          0.963277[] 
+ []
+
+
+Overfull \hbox (18.0422pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## sexfemale:education          -9467.7     2803.6  -3.377   
+          0.000739[] 
+ []
+
+
+Overfull \hbox (18.0422pt too wide) in paragraph at lines 1507--1507
+[]\T1/lmtt/m/n/12 ## sexfemale:age                 2925.4     3104.9   0.942   
+          0.346147[] 
  []
 
 [21]
-<A2_files/figure-latex/GGplot_Og_Facet-1.pdf, id=219, 469.755pt x 325.215pt>
+<A2_files/figure-latex/GGplot_Og_Facet-1.pdf, id=214, 469.755pt x 325.215pt>
 File: A2_files/figure-latex/GGplot_Og_Facet-1.pdf Graphic file (type pdf)
 <use A2_files/figure-latex/GGplot_Og_Facet-1.pdf>
 Package pdftex.def Info: A2_files/figure-latex/GGplot_Og_Facet-1.pdf  used on i
-nput line 1868.
+nput line 1881.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[22 <./A2_files/figure-latex/GGplot_Og_Facet-1.pdf>] [23] [24] [25] (./A2.aux)
+[22] [23 <./A2_files/figure-latex/GGplot_Og_Facet-1.pdf>] [24] [25] [26] (./A2.
+aux)
 Package rerunfilecheck Info: File `A2.out' has not changed.
 (rerunfilecheck)             Checksum: D4FF431A9E06FD5CD8071DBB6AE819C7;3216.
  ) 
 Here is how much of TeX's memory you used:
- 17359 strings out of 480539
- 304007 string characters out of 5901807
- 669673 words of memory out of 5000000
- 34629 multiletter control sequences out of 15000+600000
+ 17398 strings out of 479939
+ 303454 string characters out of 5883710
+ 670737 words of memory out of 5000000
+ 34703 multiletter control sequences out of 15000+600000
  459016 words of font info for 73 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
+ 350 hyphenation exceptions out of 8191
  70i,13n,81p,368b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/Users/kevinha/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{
-/Users/kevinha/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/
-kevinha/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/kev
-inha/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/kevinha/Li
-brary/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</Users/kevinha/Library/
-TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/kevinha/Library/Tin
-yTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/kevinha/Library/TinyT
-eX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/kevinha/Library/TinyTeX/
-texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/kevinha/Library/TinyTeX/texm
-f-dist/fonts/type1/public/lm/lmr17.pfb></Users/kevinha/Library/TinyTeX/texmf-di
-st/fonts/type1/public/lm/lmr8.pfb></Users/kevinha/Library/TinyTeX/texmf-dist/fo
-nts/type1/public/lm/lmri12.pfb></Users/kevinha/Library/TinyTeX/texmf-dist/fonts
-/type1/public/lm/lmsy10.pfb></Users/kevinha/Library/TinyTeX/texmf-dist/fonts/ty
-pe1/public/lm/lmtt12.pfb></Users/kevinha/Library/TinyTeX/texmf-dist/fonts/type1
-/public/lm/lmtti10.pfb>
-Output written on A2.pdf (25 pages, 607526 bytes).
+{/Users/ag/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/User
+s/ag/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/ag/Library
+/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/ag/Library/TinyTeX
+/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/ag/Library/TinyTeX/texmf-dist/
+fonts/enc/dvips/lm/lm-ts1.enc}</Users/ag/Library/TinyTeX/texmf-dist/fonts/type1
+/public/lm/lmbx12.pfb></Users/ag/Library/TinyTeX/texmf-dist/fonts/type1/public/
+lm/lmbxi10.pfb></Users/ag/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi
+12.pfb></Users/ag/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></
+Users/ag/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/ag/
+Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/ag/Library/Ti
+nyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/ag/Library/TinyTeX/te
+xmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/ag/Library/TinyTeX/texmf-dist
+/fonts/type1/public/lm/lmtt12.pfb></Users/ag/Library/TinyTeX/texmf-dist/fonts/t
+ype1/public/lm/lmtti10.pfb>
+Output written on A2.pdf (26 pages, 611546 bytes).
 PDF statistics:
- 339 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
+ 342 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
  82 named destinations out of 1000 (max. 500000)
  162 words of extra memory for PDF output out of 10000 (max. 10000000)
 

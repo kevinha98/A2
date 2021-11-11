@@ -3,4 +3,7 @@ title: "AG comments"
 output: html_notebook
 ---
 
--   reproduserbart til html og pdf uten noen problem. Flott!
+-   Reproduserbart til html og pdf uten noen problem. Flott!
+-   EDA analysen er lovlig tynn. Jeg har lagt inn noen ideer for mulige plot. I de to siste plotene begynner en å ane hva som bestemmer inntekt.
+-   EDA kan gi viktig informasjon for valg av modelle
+-   

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.2)  11 NOV 2021 14:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.2)  12 NOV 2021 08:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -666,17 +666,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/Users/ag/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-56.
+58.
 (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-260.
+262.
 (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [3]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-10.
+13.
 (/Users/ag/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -684,51 +684,52 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: A2_files/figure-latex/histogram-1.pdf Graphic file (type pdf)
 <use A2_files/figure-latex/histogram-1.pdf>
 Package pdftex.def Info: A2_files/figure-latex/histogram-1.pdf  used on input l
-ine 342.
+ine 341.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [4 <./A2_files/figure-latex/histogram-1.pdf>] [5]
 <A2_files/figure-latex/max_inntekt-1.pdf, id=114, 469.755pt x 325.215pt>
 File: A2_files/figure-latex/max_inntekt-1.pdf Graphic file (type pdf)
 <use A2_files/figure-latex/max_inntekt-1.pdf>
 Package pdftex.def Info: A2_files/figure-latex/max_inntekt-1.pdf  used on input
- line 441.
+ line 436.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [6] [7 <./A2_files/figure-latex/max_inntekt-1.pdf>]
 <A2_files/figure-latex/min_inntekt-1.pdf, id=129, 469.755pt x 325.215pt>
 File: A2_files/figure-latex/min_inntekt-1.pdf Graphic file (type pdf)
 <use A2_files/figure-latex/min_inntekt-1.pdf>
 Package pdftex.def Info: A2_files/figure-latex/min_inntekt-1.pdf  used on input
- line 496.
+ line 487.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[8 <./A2_files/figure-latex/min_inntekt-1.pdf>]
-<A2_files/figure-latex/min_og_max_inntekt-1.pdf, id=139, 469.755pt x 325.215pt>
+[8 <./A2_files/figure-latex/min_inntekt-1.pdf>] [9]
+<A2_files/figure-latex/min_og_max_inntekt-1.pdf, id=144, 469.755pt x 325.215pt>
 
 File: A2_files/figure-latex/min_og_max_inntekt-1.pdf Graphic file (type pdf)
 <use A2_files/figure-latex/min_og_max_inntekt-1.pdf>
 Package pdftex.def Info: A2_files/figure-latex/min_og_max_inntekt-1.pdf  used o
-n input line 549.
+n input line 574.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[9] [10 <./A2_files/figure-latex/min_og_max_inntekt-1.pdf>] [11] [12] [13]
+[10 <./A2_files/figure-latex/min_og_max_inntekt-1.pdf>] [11] [12] [13] [14]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 791.
+(Font)              <12> on input line 852.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 791.
+(Font)              <8> on input line 852.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 791.
+(Font)              <6> on input line 852.
+[15]
 
-LaTeX Warning: Command \r invalid in math mode on input line 1007.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 1007.
+LaTeX Warning: Command \r invalid in math mode on input line 1068.
 
 
-LaTeX Warning: Command \o invalid in math mode on input line 1008.
+LaTeX Warning: Command \o invalid in math mode on input line 1068.
 
 
-LaTeX Warning: Command \o invalid in math mode on input line 1008.
+LaTeX Warning: Command \o invalid in math mode on input line 1069.
 
 
-Overfull \hbox (133.55666pt too wide) in paragraph at lines 1007--1009
+LaTeX Warning: Command \o invalid in math mode on input line 1069.
+
+
+Overfull \hbox (133.55666pt too wide) in paragraph at lines 1068--1070
 []$\OML/lmm/m/it/12 H[] \OT1/lmr/m/n/12 : \OML/lmm/m/it/12 Litenendringit \OMS/
 lmsy/m/n/12 ^^@ \OML/lmm/m/it/12 verdiogsignifikansniv\OT1/lmr/m/n/12 å\OML/lmm
 /m/it/12 forh\OT1/lmr/m/n/12 ø\OML/lmm/m/it/12 yde$ $H[] \OT1/lmr/m/n/12 : \OML
@@ -736,224 +737,222 @@ lmsy/m/n/12 ^^@ \OML/lmm/m/it/12 verdiogsignifikansniv\OT1/lmr/m/n/12 å\OML/lmm
  st\OT1/lmr/m/n/12 ø\OML/lmm/m/it/12 rreavvikit \OMS/lmsy/m/n/12 ^^@
  []
 
-[14] [15]
-Overfull \hbox (5.6852pt too wide) in paragraph at lines 1124--1124
+[16]
+Overfull \hbox (5.6852pt too wide) in paragraph at lines 1185--1185
 []\T1/lmtt/m/n/12 ## (Intercept)         -1087464.6   226208.6  -4.807    0.000
 001572603235 ***[] 
  []
 
 
-Overfull \hbox (5.6852pt too wide) in paragraph at lines 1124--1124
+Overfull \hbox (5.6852pt too wide) in paragraph at lines 1185--1185
 []\T1/lmtt/m/n/12 ## height_cm               9685.6     1312.6   7.379    0.000
 000000000185 ***[] 
  []
 
 
-Overfull \hbox (5.6992pt too wide) in paragraph at lines 1124--1124
+Overfull \hbox (5.6992pt too wide) in paragraph at lines 1185--1185
 []\T1/lmtt/m/n/12 ## weight                  -829.8      179.3  -4.628    0.000
 003783773448 ***[] 
  []
 
 
-Overfull \hbox (5.67819pt too wide) in paragraph at lines 1124--1124
+Overfull \hbox (5.67819pt too wide) in paragraph at lines 1185--1185
 []\T1/lmtt/m/n/12 ## maritalmarried        165425.3    19946.9   8.293 < 0.0000
 000000000002 ***[] 
  []
 
-[16] [17]
-Overfull \hbox (5.6992pt too wide) in paragraph at lines 1300--1300
+[17] [18]
+Overfull \hbox (5.6992pt too wide) in paragraph at lines 1361--1361
 []\T1/lmtt/m/n/12 ## (Intercept)         -542258.82  118177.26  -4.589      0.0
 000045445601 ***[] 
  []
 
-
-Overfull \hbox (5.6992pt too wide) in paragraph at lines 1300--1300
+[19]
+Overfull \hbox (5.6992pt too wide) in paragraph at lines 1361--1361
 []\T1/lmtt/m/n/12 ## height_cm              4812.42     686.42   7.011      0.0
 000000000026 ***[] 
  []
 
 
-Overfull \hbox (5.6922pt too wide) in paragraph at lines 1300--1300
+Overfull \hbox (5.6922pt too wide) in paragraph at lines 1361--1361
 []\T1/lmtt/m/n/12 ## weight                 -291.14      88.43  -3.292         
     0.000998 ***[] 
  []
 
 
-Overfull \hbox (5.6992pt too wide) in paragraph at lines 1300--1300
+Overfull \hbox (5.6992pt too wide) in paragraph at lines 1361--1361
 []\T1/lmtt/m/n/12 ## maritalmarried       158245.57    9870.39  16.032 < 0.0000
 000000000002 ***[] 
  []
 
 
-Overfull \hbox (5.67819pt too wide) in paragraph at lines 1300--1300
+Overfull \hbox (5.67819pt too wide) in paragraph at lines 1361--1361
 []\T1/lmtt/m/n/12 ## maritaldivorced       71219.50   11360.29   6.269      0.0
 000000003854 ***[] 
  []
 
-[18] [19] [20]
-Overfull \hbox (18.07022pt too wide) in paragraph at lines 1548--1548
+[20] [21]
+Overfull \hbox (18.07022pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ##                             Estimate Std. Error t value   
           Pr(>|t|)[] 
  []
 
 
-Overfull \hbox (18.05621pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.05621pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## (Intercept)                -522379.0   678234.7  -0.770   
           0.441215[] 
  []
 
 
-Overfull \hbox (18.0422pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.0422pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## sexfemale                   -22303.4   875111.8  -0.025   
           0.979668[] 
  []
 
 
-Overfull \hbox (18.0422pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.0422pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## height_cm                     1938.9     3735.2   0.519   
           0.603718[] 
  []
 
 
-Overfull \hbox (18.05621pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.05621pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## weight_kg                     -740.3     3539.2  -0.209   
           0.834312[] 
  []
 
 
-Overfull \hbox (18.0352pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.0352pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## maritalmarried              179097.9    14336.2  12.493 < 
 0.0000000000000002[] 
  []
 
 
-Overfull \hbox (18.0422pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.0422pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## maritalseparated             39709.8    28043.0   1.416   
           0.156828[] 
  []
 
 
-Overfull \hbox (18.05621pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.05621pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## maritaldivorced              92214.0    17123.0   5.385   
       0.0000000756[] 
  []
 
 
-Overfull \hbox (18.04921pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.04921pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## maritalwidowed                3518.1    60988.4   0.058   
           0.954002[] 
  []
 
 
-Overfull \hbox (18.0352pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.0352pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## bmi                            862.5     5117.0   0.169   
           0.866148[] 
  []
 
 
-Overfull \hbox (18.05621pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.05621pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## education                    48981.1     2021.9  24.225 < 
 0.0000000000000002[] 
  []
 
-
-Overfull \hbox (18.04921pt too wide) in paragraph at lines 1548--1548
+[22]
+Overfull \hbox (18.04921pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## age                          -2465.0     2211.7  -1.115   
           0.265090[] 
  []
 
 
-Overfull \hbox (18.0352pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.0352pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## sexfemale:height_cm            324.5     4996.2   0.065   
           0.948214[] 
  []
 
 
-Overfull \hbox (18.0282pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.0282pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## sexfemale:weight_kg           -481.9     4900.1  -0.098   
           0.921656[] 
  []
 
 
-Overfull \hbox (18.04921pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.04921pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## sexfemale:maritalmarried   -177530.8    20970.0  -8.466 < 
 0.0000000000000002[] 
  []
 
 
-Overfull \hbox (18.05621pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.05621pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## sexfemale:maritalseparated  -93873.1    37895.8  -2.477   
           0.013277[] 
  []
 
 
-Overfull \hbox (18.04921pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.04921pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## sexfemale:maritaldivorced   -77997.3    24072.9  -3.240   
           0.001203[] 
  []
 
 
-Overfull \hbox (18.0282pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.0282pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## sexfemale:maritalwidowed     -6488.9    67844.0  -0.096   
           0.923807[] 
  []
 
-[21]
-Overfull \hbox (18.0422pt too wide) in paragraph at lines 1548--1548
+
+Overfull \hbox (18.0422pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## sexfemale:bmi                 -300.8     6533.1  -0.046   
           0.963277[] 
  []
 
 
-Overfull \hbox (18.0422pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.0422pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## sexfemale:education          -9467.7     2803.6  -3.377   
           0.000739[] 
  []
 
 
-Overfull \hbox (18.0422pt too wide) in paragraph at lines 1548--1548
+Overfull \hbox (18.0422pt too wide) in paragraph at lines 1609--1609
 []\T1/lmtt/m/n/12 ## sexfemale:age                 2925.4     3104.9   0.942   
           0.346147[] 
  []
 
-[22]
-<A2_files/figure-latex/GGplot_Og_Facet-1.pdf, id=219, 469.755pt x 325.215pt>
+[23] [24]
+<A2_files/figure-latex/GGplot_Og_Facet-1.pdf, id=230, 469.755pt x 325.215pt>
 File: A2_files/figure-latex/GGplot_Og_Facet-1.pdf Graphic file (type pdf)
 <use A2_files/figure-latex/GGplot_Og_Facet-1.pdf>
 Package pdftex.def Info: A2_files/figure-latex/GGplot_Og_Facet-1.pdf  used on i
-nput line 1922.
+nput line 1983.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[23] [24 <./A2_files/figure-latex/GGplot_Og_Facet-1.pdf>] [25] [26] [27] (./A2.
-aux)
+[25 <./A2_files/figure-latex/GGplot_Og_Facet-1.pdf>] [26] [27] [28] (./A2.aux)
 Package rerunfilecheck Info: File `A2.out' has not changed.
 (rerunfilecheck)             Checksum: 7478AD09098C73A53E6A5F6257D2AE5C;3131.
  ) 
 Here is how much of TeX's memory you used:
- 17402 strings out of 479939
- 303446 string characters out of 5883710
- 670722 words of memory out of 5000000
- 34704 multiletter control sequences out of 15000+600000
- 459323 words of font info for 74 fonts, out of 8000000 for 9000
+ 17403 strings out of 479939
+ 303372 string characters out of 5883710
+ 672280 words of memory out of 5000000
+ 34703 multiletter control sequences out of 15000+600000
+ 455052 words of font info for 73 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 70i,13n,81p,368b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,13n,81p,353b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/Users/ag/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/User
 s/ag/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/ag/Library
 /TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/ag/Library/TinyTeX
 /texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/Users/ag/Library/TinyTeX/texmf-dist
 /fonts/enc/dvips/lm/lm-ec.enc}</Users/ag/Library/TinyTeX/texmf-dist/fonts/type1
 /public/lm/lmbx12.pfb></Users/ag/Library/TinyTeX/texmf-dist/fonts/type1/public/
-lm/lmbxi10.pfb></Users/ag/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi
-12.pfb></Users/ag/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></
-Users/ag/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/ag/
-Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/ag/Library/Ti
-nyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/ag/Library/TinyTeX/te
-xmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/ag/Library/TinyTeX/texmf-dist
-/fonts/type1/public/lm/lmtt12.pfb></Users/ag/Library/TinyTeX/texmf-dist/fonts/t
-ype1/public/lm/lmtti10.pfb>
-Output written on A2.pdf (27 pages, 614877 bytes).
+lm/lmmi12.pfb></Users/ag/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12
+.pfb></Users/ag/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Us
+ers/ag/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/ag/Lib
+rary/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/ag/Library/Tin
+yTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/ag/Library/TinyTeX/tex
+mf-dist/fonts/type1/public/lm/lmtt12.pfb></Users/ag/Library/TinyTeX/texmf-dist/
+fonts/type1/public/lm/lmtti10.pfb>
+Output written on A2.pdf (28 pages, 606339 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 285 compressed objects within 3 object streams
- 84 named destinations out of 1000 (max. 500000)
+ 356 PDF objects out of 1000 (max. 8388607)
+ 291 compressed objects within 3 object streams
+ 87 named destinations out of 1000 (max. 500000)
  162 words of extra memory for PDF output out of 10000 (max. 10000000)
 

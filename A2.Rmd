@@ -35,7 +35,8 @@ I den følgende artikkelen anvendes datasettet **heights** fra pakken **modelr**
 
 ## En kort litteraturgjennomgang
 
-@judgeEffectPhysicalHeight2004, kommer med utsagnet at "høyde påvirker inntekt" er ved første øyekast en gammel myte, men at det kanskje er mer i det enn man først skulle tro.
+@judgeEffectPhysicalHeight2004 hevder at "høyde påvirker inntekt".
+Dette kan ved første øyekast synes som en gammel myte, men kanskje er det mer i det enn man først skulle tro.
 For å støtte dette utsagnet referer de til @roberts1986 som viser til at høyde er et trekk som er ettertraktet i en sosial sammenheng.
 
 Denne forskningen mener i tillegg at høyere mennesker er mer overbevisende.
@@ -45,8 +46,9 @@ De viser til @highamRiseFallPoliticians1992 som påstår at høyere mennesker ha
 @burnsRetailSalespersonsInquiry1993 viste at 78% av ansettelser innen salg, var mennesker med over gjennomsnittlig høyde.
 Rekruttererne argumenterte med at høydeforskjellen skyldtes at høyere selgere gjør seg mer bemerket enn lavere selgere.
 
-@judgeEffectPhysicalHeight2004, ville svare på dette med å utføre en studie med tre hovedpunkter.
-Først å fremstille en modell som viser forholdet mellom høyde og karrieresuksess, da dette ikke var utført tidligere.
+@judgeEffectPhysicalHeight2004 ville undersøke dette ved å utføre en studie med tre hovedpunkter.
+Først å fremstille en modell som viser forholdet mellom høyde og karrieresuksess.
+Dette var ikke utført tidligere.
 Steg to var å utføre en metaanalyse på tidligere analyser og litteratur for å se etter generelle implikasjoner.
 Siste steget var å utføre fire nye undersøkelser på forholdet mellom en persons høyde og inntekt.
 
@@ -59,18 +61,18 @@ Noen av faktorene de så på var selvtillit og sosial rang.
 @judgeEffectPhysicalHeight2004 mente dette var to viktige punkter i analysen fordi disse to faktorene påvirker ens arbeidsinnsats, samt hvordan en blir behandlet i arbeidslivet av arbeidsgiver.
 De mente faktorene ville påvirke en persons suksess i arbeidslivet, og innebære at en høyere person ville ha høyere inntekt enn en lavere person.
 
-@judgeEffectPhysicalHeight2004, kom frem til at det var en "rekke" av påvirkninger på en høy person i arbeidslivet.
+@judgeEffectPhysicalHeight2004 kom frem til at det var en rekke effekter av en persons høyde i arbeidslivet.
 Økt høyde kan medføre bedre selvtillit, og følgelig høyere sosial rang, som igjen vil resultere i bedre arbeidsinnsats og muligheter - og eventuelt suksess.
 
 For å støtte opp under grunnlaget for modellen, henviste de til flere tidligere studier gjort rundt høyde, karrièremuligheter og suksess, samt til flere andre studier om hvordan selvtillit blir påvirket av ulike personlige faktorer.
 
-@judgeEffectPhysicalHeight2004 konkluderte med at det var en direkte sammenheng mellom en persons høyde og inntekt.
+@judgeEffectPhysicalHeight2004 konkluderte med at det var en direkte empirisk sammenheng mellom en persons høyde og inntekt.
 
 KUTT ELLER UNDERBYGG MED REFERANSER: I senere tid har dette resultatet blitt sett på og folk mener at sunn fornuft tilsier at dette ikke kan stemme eller at det må være andre eller flere faktorer som spiller inn.
 
 ## Analyse med egen versjon av datasettet
 
-I henhold til oppgaveteksten, angir vi datasettet for *hoyde*.
+I henhold til oppgaveteksten, kaller vi datasettet for *hoyde*.
 
 ```{r hoyde, echo=TRUE}
 # Vi selekterer ut dataene for heights fra pakken modelr, og angir deretter benevnelsen "hoyde"
@@ -96,9 +98,9 @@ kable(summary(hoyde[,9:10]))
 # Til slutt kan vi oppsummere de interessante variablene i metrisk form, samt oversatt.
 ```
 
-### Beskrivende statistikk (beskrivelse av dataer)
+### Beskrivende statistikk (beskrivelse av data)
 
-Datasettet vi bruker er fra R-pakken, @R_core, *modelr,* @modelr20, og er hentet fra National Longitudinal Study, som er sponset av U.S.
+Datasettet vi bruker er fra R [@R_core] pakken, *modelr* [@modelr20] og er hentet fra National Longitudinal Study, som er sponset av U.S.
 Bureau of Labor Statistics.
 Dataene stammer fra 2012.
 Følgende er forklaringer av variablene:
@@ -133,6 +135,9 @@ Først med hele datasettet.
  summary(hoyde)
 ```
 
+EDA er vel knapp.
+Se mitt løsningsforslag for andre ting som kunne vært gjort
+
 ### Regresjonsanalyser
 
 ```{r regresjonanalyse}
@@ -140,19 +145,39 @@ Først med hele datasettet.
   summary()
 ```
 
+Analysen ovenfor er helt grei, men jeg vil likevel foreslå følgende arbeidsmåte.
+
+```{r}
+# Definer modellen
+mod0 <- 'inntekt ~ height_cm'
+```
+
+Regresjonsmodellen
+
+```{r}
+lm0 <- hoyde %>% 
+  # her kan eventuelle filter() eller mutate() kommandoer legges inn
+  # data = . nødvendig siden lm() er en av de få kommandoene som ikke
+  # har data/input som første argument
+  lm(mod0, data = .)
+```
+
+```{r}
+summary(lm0)
+```
+
 Her ser vi at en økning i høyden på 1 cm, gir 9978.5 kr mer i årlig inntekt.
 La oss prøve med datasett uten de 2% med toppinntekt, og uten de med inntekt = 0.
 
 ```{r max_inntekt}
 # Nå filtrerer vi ut de observasjonene med inntekt lavere enn 1,6MNOK. Vi ser da under "Environment" at vi sitter igjen med 6863 observasjoner i datasettet "hoyde_max_inntekt".
-
 hoyde_max_inntekt <- hoyde %>%
   filter(inntekt < 1600000)
-
+# HVORFOR IKKE BARE SLÅ SAMMEN PIPE-EN?
+hoyde %>%
+  filter(inntekt < 1600000) %>% 
 # For illustrajonshensikter, kan vi også se hvordan dette histogrammet har endret seg i forhold til det forrige.
-
-ggplot(data = hoyde_max_inntekt,
-       aes(x = inntekt)) + 
+  ggplot(mapping = aes(x = inntekt)) + 
   geom_histogram(binwidth = 50000)
 ```
 
@@ -183,7 +208,7 @@ ggplot(data = hoyde_min_inntekt,
   summary()
 ```
 
-Ovenfor er helt OK, men jeg synes det er mer hensiktsmessig å gjøre det på følgende måte:
+Ovenfor er helt OK, men jeg synes altså det er mer hensiktsmessig å gjøre det på følgende måte:
 
 ```{r}
 mod0 <- 'inntekt ~ height_cm'
@@ -197,21 +222,18 @@ Her ser vi at en økning i høyden på 1 cm, gir 11122.9 kr mer i årlig inntekt
 
 ```{r min_og_max_inntekt}
 # Her fjernes både 0 inntekt og topp 2% i samme modell istedenfor hver for seg som tidligere. Hensikten er ållustrere forskjellen mellom disse modellene.
-
-hoyde_min_og_max_inntekt <- hoyde %>%
+# HVORFOR GÅ VEIEN OM NYTT DATASETT?
+hoyde %>%
   filter(inntekt < 1600000) %>% 
-  filter(inntekt > 0)
-
-# Fremstiller dette i ggplot for å illustrere forskjellen mellom modellene ovenfor grafisk.
-
-ggplot(data = hoyde_min_og_max_inntekt,
-       aes(x = inntekt)) + 
-  geom_histogram()
+  filter(inntekt > 0) %>% 
+  # Fremstiller dette i ggplot for å illustrere forskjellen mellom modellene ovenfor grafisk.
+  ggplot(aes(x = inntekt)) + 
+  geom_histogram(binwidth = 50000)
 ```
 
 ```{r regresjonsanalyse4}
-(lm(inntekt ~ height_cm, data = hoyde_min_og_max_inntekt)) %>%
-  summary()
+# (lm(inntekt ~ height_cm, data = hoyde_min_og_max_inntekt)) %>%
+#   summary()
 ```
 
 Ser her at om vi tar vekk både 0 inntekt og topp 2% inntekt, så vil 1 cm tilsvare enn lønnsøkning på 6088.8 kr.
@@ -225,7 +247,7 @@ lm1 <- hoyde %>%
 summary(lm1)
 ```
 
-#### Forklaring til utliggere i plots 
+#### Forklaring til utliggere i plots
 
 Som vi ser ut fra grafen er det en stor ujevnhet.
 I datasettet har den største andelen av observasjonene under ca 700 000 kroner, og minoriteten har over 700 000 kroner.
@@ -285,6 +307,9 @@ summary(hoyde)
 Filtrert datasett, nye variabler, BMI og gift - ikke gift:
 
 ```{r nye_variable_filtrert_datasett}
+hoyde_min_og_max_inntekt <- hoyde %>% 
+  filter(inntekt > 0 & inntekt < 3000000)
+#####
 hoyde_filtrert <- hoyde_min_og_max_inntekt %>% 
   mutate(
     height_cm = 2.54 * height,
@@ -304,6 +329,46 @@ Oppsummerer resultatet via *summary()*
 
 ```{r summary_nye_variable_filtrert_datasett}
 summary(hoyde_filtrert)
+```
+
+EN BEDRE STRATEGI VIL VÆRE Å DEFINERE DE NYE VARIABLENE I hoyde OG SÅ BARE FILTRERE hoyde I EN PIPE FØR EVENTUELLE lm eller ggplot KOMMANDOER.
+GIR MER OVERSIKTRLIG KODE SOM OGSÅ ER LETTERE Å ENDRE PÅ F.EKS
+
+```{r hoyde_nye_variabler}
+hoyde <- hoyde %>% 
+  mutate(
+    height_cm = 2.54 * height,
+    weight_kg = weight * 0.45,
+    bmi = (weight / (height_cm / 100)^2),
+    married = factor(
+      case_when(
+      # note, summary showed no NA for marital
+        marital =='married'~ TRUE,
+        # all other categories FALSE
+        TRUE ~ FALSE)
+    )
+  )
+```
+
+```{r redusert_datasett}
+mod_ag <- 'inntekt ~ sex*(education + afqt + married)'
+lm_ag_red <- hoyde %>% 
+  filter(inntekt > 0 & inntekt < 3000000) %>% 
+  lm(mod_ag, data = .)
+```
+
+Samme modell med hele datasettet
+
+```{r}
+mod_ag <- 'inntekt ~ sex*(education + afqt + married)'
+lm_ag <- hoyde %>% 
+  lm(mod_ag, data = .)
+```
+
+```{r}
+huxreg(
+  list("M_1" = lm_ag, "M_1_red" = lm_ag_red),
+  error_format = "[{statistic}]")
 ```
 
 # HuxReg

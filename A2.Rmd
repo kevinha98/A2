@@ -7,12 +7,12 @@ author:
 fontsize: 12pt
 linestrech: 1.5
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
   word_document: default
 lang: no-NB
-bibliography: Height_And_Income.bib
+bibliography: [Height_And_Income.bib, ag_bib.bib]
 ---
 
 ```{r setup, message=FALSE, echo = FALSE}
@@ -29,60 +29,89 @@ options(scipen = 999)
 \newpage
 
 ## Innledning
-Dette er oppgave 2 i kurset MSB105 Data Science. I den følgende artikkelen anvendes datasettet **heights** fra pakken **modelr** for å besvare følgende problemstilling;  **Er det høyde som bestemmer inntekt?**
 
-## En kort litteraturgjennomgang på ca. 1 side
+Dette er oppgave 2 i kurset MSB105 Data Science.
+I den følgende artikkelen anvendes datasettet **heights** fra pakken **modelr** for å besvare følgende problemstilling; **Er det høyde som bestemmer inntekt?**
 
-I @judgeEffectPhysicalHeight2004, kommer de med utsagnet at "høyde påvirker inntekt" er ved første øyenkast en gammel myte, men at det kanskje er mer til det enn man først skulle trodd. For å støtte dette utsagnet referer de til Robert & Herman sin forskning som viser til at høyde er et trekk som er ettertraktet i en sosial sammenheng.
+## En kort litteraturgjennomgang
 
-Denne forskningen mener i tillegg at høyere mennesker er mer overbevisende. De viser til @highamRiseFallPoliticians1992 som påstår at høyere mennesker har høyere sannsynlighet til å få lederstillinger. Judge & Cable teoriserer at dette muligens har røtter i biologi, ettersom at høyde i naturen er en måling får styrke.
+@judgeEffectPhysicalHeight2004 hevder at "høyde påvirker inntekt".
+Dette kan ved første øyekast synes som en gammel myte, men kanskje er det mer i det enn man først skulle tro.
+For å støtte dette utsagnet referer de til @roberts1986 som viser til at høyde er et trekk som er ettertraktet i en sosial sammenheng.
 
-En studie utført av Kurtz @burnsRetailSalespersonsInquiry1993 viste at 78% av ansettelser innen salg, var mennesker med over gjennomsnittlig høyde. Rekrutterne argumenterte at høydeforskjellen skyldes at høyere selgere gjør seg mer bemerket enn lavere selgere.
+Denne forskningen mener i tillegg at høyere mennesker er mer overbevisende.
+De viser til @highamRiseFallPoliticians1992 som påstår at høyere mennesker har høyere sannsynlighet til å få lederstillinger.
+@judgeEffectPhysicalHeight2004 teoriserer at dette muligens har røtter i biologi, ettersom høyde i naturen er et mål på styrke.
 
-@judgeEffectPhysicalHeight2004, ville svare på dette med å utføre en studie med tre hovedpunkter. Først fremstille en modell som viser forholdet mellom høyde og karrieresuksess, da dette ikke var utført tidligere. Steg to var å utføre en metaanalyse på tidligere analyser og litteratur for å se etter generelle implikasjoner. Siste steget var å utføre fire nye undersøkelser på forholdet mellom en persons høyde og inntekt.
+@burnsRetailSalespersonsInquiry1993 viste at 78% av ansettelser innen salg, var mennesker med over gjennomsnittlig høyde.
+Rekruttererne argumenterte med at høydeforskjellen skyldtes at høyere selgere gjør seg mer bemerket enn lavere selgere.
 
-Argumentet for å se på sammenhengen mellom en persons høyde og inntekt var fordi de anså inntekt som den primære faktoren for karrieresuksess. Men i følge @EMPIRICALINVESTIGATIONPREDICTORS og @whitelyRelationshipCareerMentoring1991, så er det nesten ingen støttende forskning på dette.
+@judgeEffectPhysicalHeight2004 ville undersøke dette ved å utføre en studie med tre hovedpunkter.
+Først å fremstille en modell som viser forholdet mellom høyde og karrieresuksess.
+Dette var ikke utført tidligere.
+Steg to var å utføre en metaanalyse på tidligere analyser og litteratur for å se etter generelle implikasjoner.
+Siste steget var å utføre fire nye undersøkelser på forholdet mellom en persons høyde og inntekt.
 
-@judgeEffectPhysicalHeight2004, tok i sin undersøkelse utgangspunkt i flere menneskelige faktorer for å produsere sin modell for forholdet mellom en persons høyde og inntekt.
+Argumentet for å se på sammenhengen mellom en persons høyde og inntekt var at de anså inntekt for å være den primære indikatoren for karrieresuksess.
+Men i følge @judge1995 og @whitelyRelationshipCareerMentoring1991, så er det nesten ingen støttende forskning på dette.
 
-Noen av punktene de så på var selvtillit og sosial rang. Judge & Cable @judgeEffectPhysicalHeight2004 mente dette var to viktige punkter i analysen fordi disse to faktorene påvirker ens arbeidsinnsats, samt hvordan en  blir behandlet i arbeidslivet av arbeidsgiver. De mente faktorene ville påvirke en persons suksess i arbeidslivet, og innebære at en høyere person ville ha høyere inntekt enn en lavere person.
+@judgeEffectPhysicalHeight2004 tar utgangspunkt i flere menneskelige faktorer for å utvikle en modell for forholdet mellom en persons høyde og inntekt.
 
-Modellen til Judge og Cable @judgeEffectPhysicalHeight2004, kom frem til at det var en "rekke" av påvirkninger på en høy person i arbeidslivet. Høyden til en person kan medføre til bedre selvtillit, og følgelig høyere sosial rang, som igjen ville til resultere i bedre arbeidsinnsats og muligheter - og eventuelt suksess.
+Noen av faktorene de så på var selvtillit og sosial rang.
+@judgeEffectPhysicalHeight2004 mente dette var to viktige punkter i analysen fordi disse to faktorene påvirker ens arbeidsinnsats, samt hvordan en blir behandlet i arbeidslivet av arbeidsgiver.
+De mente faktorene ville påvirke en persons suksess i arbeidslivet, og innebære at en høyere person ville ha høyere inntekt enn en lavere person.
 
-For å støtte opp under grunnlaget for modellen, henviste de til flere tidligere studier gjort rundt høyde, karrieremuligheter og suksess, samt til flere andre studier om hvordan selvtillit blir påvirket av ulike personlige faktorer.
+@judgeEffectPhysicalHeight2004 kom frem til at det var en rekke effekter av en persons høyde i arbeidslivet.
+Økt høyde kan medføre bedre selvtillit, og følgelig høyere sosial rang, som igjen vil resultere i bedre arbeidsinnsats og muligheter - og eventuelt suksess.
 
-Studien som Judge og Cable @judgeEffectPhysicalHeight2004 gjennomførte konkluderte med at det var en direkte sammenheng mellom en persons høyde og inntekt. I senere tid har dette resultatet blitt sett på og folk mener at sunn fornuft tilsier at dette ikke kan stemme eller at det må være andre eller flere faktorer som spiller inn.
+For å støtte opp under grunnlaget for modellen, henviste de til flere tidligere studier gjort rundt høyde, karrièremuligheter og suksess, samt til flere andre studier om hvordan selvtillit blir påvirket av ulike personlige faktorer.
+
+@judgeEffectPhysicalHeight2004 konkluderte med at det var en direkte empirisk sammenheng mellom en persons høyde og inntekt.
+
+KUTT ELLER UNDERBYGG MED REFERANSER: I senere tid har dette resultatet blitt sett på og folk mener at sunn fornuft tilsier at dette ikke kan stemme eller at det må være andre eller flere faktorer som spiller inn.
 
 ## Analyse med egen versjon av datasettet
 
-I henhold til oppgaveteksten, angir vi datasettet for *hoyde*.
+I henhold til oppgaveteksten, kaller vi datasettet for *hoyde*.
 
 ```{r hoyde, echo=TRUE}
 # Vi selekterer ut dataene for heights fra pakken modelr, og angir deretter benevnelsen "hoyde"
 
-data('heights', package = 'modelr')
-hoyde <- heights
+# Gir to dataframe heights og hoyde
+#data('heights', package = 'modelr')
+#hoyde <- heights
+# Alternativet under gir oss bare hoyde
+hoyde <- modelr::heights
 
 # Vi rydder videre opp i benevnelsene ved å slik at de blir enklere å jobbe med. Vi oversetter dem til norsk, samt omgjør måleenhetene til metriske.
 
 hoyde$inntekt <- hoyde$income*8.5
 hoyde$height_cm <- hoyde$height*2.54
 kable(summary(hoyde[,9:10]))
+
+# Over er helt ok, men jeg vil anbefale heller å bruke tidyverse og mutate
+# hoyde <- hoyde %>% 
+#  mutate(
+#    inntekt = income * 8.5,
+#    height_cm = height * 2.54,
+#  )
 # Til slutt kan vi oppsummere de interessante variablene i metrisk form, samt oversatt.
 ```
 
-### Beskrivende statistikk (beskrivelse av dataer)
+### Beskrivende statistikk (beskrivelse av data)
 
-Datasettet vi bruker, *modelr* er hentet fra National Longitudinal Study, som er sponset av U.S. Bureau of Labor Statistics. Dataene stammer fra 2012.
-Følgende er forklaringene på variablene:
+Datasettet vi bruker er fra R [@R_core] pakken, *modelr* [@modelr20] og er hentet fra National Longitudinal Study, som er sponset av U.S.
+Bureau of Labor Statistics.
+Dataene stammer fra 2012.
+Følgende er forklaringer av variablene:
 
-- *height* = høyde i tommer
-- *weight* = vekt i pund
-- *age* = alder mellom 47 og 56
-- *marital* = sivilstatus
-- *sex* = kjønn
-- *education* = år med utdanning
-- *afqt* = prosentskår på test for militær egnethet
+-   *height* = høyde i tommer
+-   *weight* = vekt i pund
+-   *age* = alder mellom 47 og 56
+-   *marital* = sivilstatus
+-   *sex* = kjønn
+-   *education* = år med utdanning
+-   *afqt* = prosentskår på test for militær egnethet
 
 ### Exploratory Data Analysis (EDA) vha. ggplot
 
@@ -90,12 +119,24 @@ Følgende er forklaringene på variablene:
 # Her har vi laget et histogram av variablene income (også kalt inntekt)
 ggplot(data = hoyde,
        aes(x = inntekt)) + 
-  geom_histogram()
+  geom_histogram(binwidth = 100000)
 ```
 
-Her ser vi noen utliggere på høyresiden. Dette er 143 observasjoner av personer som tjener rett under 3MNOK. De skiller seg fra resten av observasjonene i histogrammet grunnet at både median- og snittlønn er langt lavere.
+Her ser vi noen utliggere på høyresiden.
+Dette er 143 observasjoner av personer som tjener rett under 3MNOK.
+De skiller seg fra resten av observasjonene i histogrammet grunnet at både median- og snittlønn er langt lavere.
 
 Vi har også personer *uten* inntekt i datasettet.
+
+Til slutt ta en titt på forklaringsvariablene, f.eks utdanning, evnenivå.
+Først med hele datasettet.
+
+```{r}
+ summary(hoyde)
+```
+
+EDA er vel knapp.
+Se mitt løsningsforslag for andre ting som kunne vært gjort
 
 ### Regresjonsanalyser
 
@@ -104,19 +145,40 @@ Vi har også personer *uten* inntekt i datasettet.
   summary()
 ```
 
-Her ser vi at en økning i høyden på 1 cm, gir 9978.5 kr mer i årlig inntekt. La oss prøve med datasett uten de 2% med toppinntekt, og uten de med inntekt = 0.
+Analysen ovenfor er helt grei, men jeg vil likevel foreslå følgende arbeidsmåte.
+
+```{r}
+# Definer modellen
+mod0 <- 'inntekt ~ height_cm'
+```
+
+Regresjonsmodellen
+
+```{r}
+lm0 <- hoyde %>% 
+  # her kan eventuelle filter() eller mutate() kommandoer legges inn
+  # data = . nødvendig siden lm() er en av de få kommandoene som ikke
+  # har data/input som første argument
+  lm(mod0, data = .)
+```
+
+```{r}
+summary(lm0)
+```
+
+Her ser vi at en økning i høyden på 1 cm, gir 9978.5 kr mer i årlig inntekt.
+La oss prøve med datasett uten de 2% med toppinntekt, og uten de med inntekt = 0.
 
 ```{r max_inntekt}
 # Nå filtrerer vi ut de observasjonene med inntekt lavere enn 1,6MNOK. Vi ser da under "Environment" at vi sitter igjen med 6863 observasjoner i datasettet "hoyde_max_inntekt".
-
 hoyde_max_inntekt <- hoyde %>%
   filter(inntekt < 1600000)
-
+# HVORFOR IKKE BARE SLÅ SAMMEN PIPE-EN?
+hoyde %>%
+  filter(inntekt < 1600000) %>% 
 # For illustrajonshensikter, kan vi også se hvordan dette histogrammet har endret seg i forhold til det forrige.
-
-ggplot(data = hoyde_max_inntekt,
-       aes(x = inntekt)) + 
-  geom_histogram()
+  ggplot(mapping = aes(x = inntekt)) + 
+  geom_histogram(binwidth = 50000)
 ```
 
 Her ser vi at utliggerne forsvinner, ettersom den vannrette aksen kun viser observasjoner hvor inntekt er lavere enn 1.600.000.
@@ -138,7 +200,7 @@ hoyde_min_inntekt <- hoyde %>%
 
 ggplot(data = hoyde_min_inntekt,
        aes(x = inntekt)) + 
-  geom_histogram()
+  geom_histogram(binwidth = 50000)
 ```
 
 ```{r regresjonsanalyse3}
@@ -146,42 +208,73 @@ ggplot(data = hoyde_min_inntekt,
   summary()
 ```
 
+Ovenfor er helt OK, men jeg synes altså det er mer hensiktsmessig å gjøre det på følgende måte:
+
+```{r}
+mod0 <- 'inntekt ~ height_cm'
+lm0 <- hoyde %>% 
+  filter(inntekt > 0) %>% 
+  lm(mod0, data = .)
+summary(lm0)
+```
+
 Her ser vi at en økning i høyden på 1 cm, gir 11122.9 kr mer i årlig inntekt.
 
 ```{r min_og_max_inntekt}
 # Her fjernes både 0 inntekt og topp 2% i samme modell istedenfor hver for seg som tidligere. Hensikten er ållustrere forskjellen mellom disse modellene.
-
-hoyde_min_og_max_inntekt <- hoyde %>%
+# HVORFOR GÅ VEIEN OM NYTT DATASETT?
+hoyde %>%
   filter(inntekt < 1600000) %>% 
-  filter(inntekt > 0)
-
-# Fremstiller dette i ggplot for å illustrere forskjellen mellom modellene ovenfor grafisk.
-
-ggplot(data = hoyde_min_og_max_inntekt,
-       aes(x = inntekt)) + 
-  geom_histogram()
+  filter(inntekt > 0) %>% 
+  # Fremstiller dette i ggplot for å illustrere forskjellen mellom modellene ovenfor grafisk.
+  ggplot(aes(x = inntekt)) + 
+  geom_histogram(binwidth = 50000)
 ```
 
 ```{r regresjonsanalyse4}
-(lm(inntekt ~ height_cm, data = hoyde_min_og_max_inntekt)) %>%
-  summary()
+# (lm(inntekt ~ height_cm, data = hoyde_min_og_max_inntekt)) %>%
+#   summary()
 ```
 
 Ser her at om vi tar vekk både 0 inntekt og topp 2% inntekt, så vil 1 cm tilsvare enn lønnsøkning på 6088.8 kr.
 
-#### Forklaring til utliggere i *plots* (Prøver å unngå Merge Conflict)
+```{r}
+#Igjen synes jeg følgende er enklere
 
-Som vi ser ut fra grafen er det en stor ujevnhet. I datasettet har den største andelen av observasjonene under ca 700 000 kroner, og minoriteten har over 700 000 kroner. 143 observasjoner har rett i underkant av 3 millioner kroner. Dette er det den høyre utliggeren i datasettet.
+lm1 <- hoyde %>% 
+  filter(inntekt > 0 & inntekt < 3000000) %>% 
+  lm(mod0, data = .)
+summary(lm1)
+```
 
-Vi har også med observasjoner *uten* lønn. Dette er den venstre utliggeren. Det er 2000 observasjoner uten lønn.
+#### Forklaring til utliggere i plots
 
-Disse utliggerne påvirker resultatet av analysen. Disse to ekstreme observasjonene resulterer i at sammenhengen mellom høyde og snitt- og medianlønn blir feilaktig fremstilt. Vi får dermed feil informasjon ut av dataene vi analyserer. Vi får tilfeller der en lav person ansees som arbeidsledig eller at en høy person har langt høyere inntekt, slik som analysen fra National Longitudinal Study kom frem til.
+Som vi ser ut fra grafen er det en stor ujevnhet.
+I datasettet har den største andelen av observasjonene under ca 700 000 kroner, og minoriteten har over 700 000 kroner.
+143 observasjoner har rett i underkant av 3 millioner kroner.
+Dette er det den høyre utliggeren i datasettet.
 
-For å oppnå et mer reelt resultat må vi se vekk ifra de ekstreme utliggerne. I dette tilfellet vil resultat blir reelt om vi ser vekk ifra både 0 inntekt og topp 2% inntekt. Dette gjennomførte vi i kode-chunken "regresjonsanalyse4" ovenfor.
+Vi har også med observasjoner *uten* lønn.
+Dette er den venstre utliggeren.
+Det er ca.
+2000 observasjoner uten lønn.
+
+Disse utliggerne *kan* påvirke resultatet av analysen.
+Disse to gruppene av ekstreme observasjonene *kan* resultere i at **(vi har jo ikke ennå vist at det gjør det)** sammenhengen mellom høyde og snitt- og medianlønn blir feilaktig fremstilt.
+Vi får dermed feil informasjon ut av dataene vi analyserer.
+Vi får tilfeller der en lav person ansees som arbeidsledig eller at en høy person har langt høyere inntekt, slik som analysen fra National Longitudinal Study kom frem til.
+
+For å oppnå et mer reelt resultat må vi se vekk ifra de ekstreme utliggerne.
+I dette tilfellet vil resultat blir reelt om vi ser vekk ifra både 0 inntekt og topp 2% inntekt.
+Dette gjennomførte vi i kode-chunken "regresjonsanalyse4" ovenfor.
+**Det er bedre å skrive det som at dere tester robustheten av eventuelle funn med å estimere samme modell på et subsett av dataene der inntekt = 0 og de 2% høyeste inntektene er tatt bort.**
 
 # Mutate: Nye Variabler
 
-Vi lager to nye datasett med nye variabler ved å bruke *mutate()* funksjonen. Et datasett der vi tar med hele tidlegere datasettet, dvs. med 0 inntekt og topp 2%. Vi lager så enda et datasett uten.
+Vi lager to nye datasett med nye variabler ved å bruke *mutate()* funksjonen.
+Et datasett der vi tar med hele tidlegere datasettet, dvs.
+med 0 inntekt og topp 2%.
+Vi lager så enda et datasett uten.
 
 *tommer* er 2.54cm
 
@@ -214,6 +307,9 @@ summary(hoyde)
 Filtrert datasett, nye variabler, BMI og gift - ikke gift:
 
 ```{r nye_variable_filtrert_datasett}
+hoyde_min_og_max_inntekt <- hoyde %>% 
+  filter(inntekt > 0 & inntekt < 3000000)
+#####
 hoyde_filtrert <- hoyde_min_og_max_inntekt %>% 
   mutate(
     height_cm = 2.54 * height,
@@ -235,6 +331,46 @@ Oppsummerer resultatet via *summary()*
 summary(hoyde_filtrert)
 ```
 
+EN BEDRE STRATEGI VIL VÆRE Å DEFINERE DE NYE VARIABLENE I hoyde OG SÅ BARE FILTRERE hoyde I EN PIPE FØR EVENTUELLE lm eller ggplot KOMMANDOER.
+GIR MER OVERSIKTRLIG KODE SOM OGSÅ ER LETTERE Å ENDRE PÅ F.EKS
+
+```{r hoyde_nye_variabler}
+hoyde <- hoyde %>% 
+  mutate(
+    height_cm = 2.54 * height,
+    weight_kg = weight * 0.45,
+    bmi = (weight / (height_cm / 100)^2),
+    married = factor(
+      case_when(
+      # note, summary showed no NA for marital
+        marital =='married'~ TRUE,
+        # all other categories FALSE
+        TRUE ~ FALSE)
+    )
+  )
+```
+
+```{r redusert_datasett}
+mod_ag <- 'inntekt ~ sex*(education + afqt + married)'
+lm_ag_red <- hoyde %>% 
+  filter(inntekt > 0 & inntekt < 3000000) %>% 
+  lm(mod_ag, data = .)
+```
+
+Samme modell med hele datasettet
+
+```{r}
+mod_ag <- 'inntekt ~ sex*(education + afqt + married)'
+lm_ag <- hoyde %>% 
+  lm(mod_ag, data = .)
+```
+
+```{r}
+huxreg(
+  list("M_1" = lm_ag, "M_1_red" = lm_ag_red),
+  error_format = "[{statistic}]")
+```
+
 # HuxReg
 
 Setter opp for å sette opp en HuxTable på datasettene med nye variabler.
@@ -252,10 +388,10 @@ lm_hoyde_filtrert <- (lm(
                          data = hoyde_filtrert))
 ```
 
-Setter opp til liste med avvik innenfor statistikk. Gir navn til tabellene våres for bedre oversikt.
+Setter opp til liste med avvik innenfor statistikk.
+Gir navn til tabellene våres for bedre oversikt.
 
-**hoyde** er med alle observasjoner
-**hoyde_filtrert** er uten 0 inntekt og topp 2%
+**hoyde** er med alle observasjoner **hoyde_filtrert** er uten 0 inntekt og topp 2%
 
 ```{r HuxReg_Mutert_Datasett}
 huxreg(
@@ -263,24 +399,28 @@ huxreg(
   error_format = "[{statistic}]")
 ```
 
-Her fremkommer det en betraktelig forskjell mellom *hoyde* i det fulle datasettet, og *hoyde_filtrert* i datasettet som er  uten 0 inntekt og 2% topp.
+Her fremkommer det en betraktelig forskjell mellom *hoyde* i det fulle datasettet, og *hoyde_filtrert* i datasettet som er uten 0 inntekt og 2% topp.
 
 De mest akutelle faktorene for studien denne innleveringen baserer seg på er:
 
-*height_cm*, *weight_kg*, *N*, *R^2*
+*height_cm*, *weight_kg*, *N*, *R\^2*
 
-Vi ser ut fra tabellene at alle fire faktorene er påvirket i stor grad. Inntekt fra *høyde* har falt nesten 10 000kr per cm, i tillegg til å gå ifra **p < 0.001** signifikansnivå til **p < 0.01** signifikansnivå. Vekt har gått ifra **p < 0.05** til ingen signifikans. N har gått ned ifra **6911 kr pr cm**, til **5054 kr pr cm**. R^2 har gått ifra **0.88** ned til **0.82**.
+Vi ser ut fra tabellene at alle fire faktorene er påvirket i stor grad.
+Inntekt fra *høyde* har falt nesten 10 000kr per cm, i tillegg til å gå ifra **p \< 0.001** signifikansnivå til **p \< 0.01** signifikansnivå.
+Vekt har gått ifra **p \< 0.05** til ingen signifikans.
+N har gått ned ifra **6911 kr pr cm**, til **5054 kr pr cm**.
+R\^2 har gått ifra **0.88** ned til **0.82**.
 
 Det vi kan tolke ut fra dette er at 0 inntekt og 2% topp inntekt har hatt en betydelig påvirkning på studien til Judge & Cable.
 
 # Test av robusthet
 
-Robushets refereres til styrken av den anvendte statistiske modellen, og kan eksempelvis være å utføre en t-test. Dette type test er en hypotesetest og brukes for å teste hvorvidt gjennomsnitssverdien i et normalfordelt datasatt er signifikant forskjellig fra en nullhypotese.
+Robushets refereres til styrken av den anvendte statistiske modellen, og kan eksempelvis være å utføre en t-test.
+Dette type test er en hypotesetest og brukes for å teste hvorvidt gjennomsnitssverdien i et normalfordelt datasatt er signifikant forskjellig fra en nullhypotese.
 
 Vi må først definere $H_0$ og $H_1$, og deretter tar vi en titt på t-verdiene til de ulike variablene og ser om de er signifikante.
 
-$H_0: Liten endring i t-verdi og signifikansnivå for høyde$
-$H_1: Høyde har mindre betydning enn anntat, større avvik i t-verdier$
+$H_0: Liten endring i t-verdi og signifikansnivå for høyde$ $H_1: Høyde har mindre betydning enn anntat, større avvik i t-verdier$
 
 ## Modellene
 
@@ -292,7 +432,7 @@ lm1 <- lm(modell_1, data = hoyde_min_inntekt)
 summary(lm1)
 ```
 
--
+-   
 
 ```{r Modell_2}
 modell_2 <- "inntekt ~ height_cm + weight + marital"
@@ -300,7 +440,7 @@ lm2 <- lm(modell_2, data = hoyde_min_inntekt)
 summary (lm2)
 ```
 
--
+-   
 
 ```{r Modell_3_Med_Interaksjon_sex}
 modell_3 <- "inntekt ~ sex*height_cm + weight + marital"
@@ -322,7 +462,7 @@ lm4 <- lm(modell_4, data = hoyde_max_inntekt)
 summary(lm4)
 ```
 
--
+-   
 
 ```{r Modell_5}
 modell_5 <- "inntekt ~ height_cm + weight + marital"
@@ -330,7 +470,7 @@ lm5 <- lm(modell_5, data = hoyde_max_inntekt)
 summary(lm5)
 ```
 
--
+-   
 
 ```{r Modell_6_Med_Interaksjon_sex}
 modell_6 <- "inntekt ~ sex*height_cm + weight + marital"
@@ -344,16 +484,24 @@ Test av koeffisienter:
 linearHypothesis(lm6, c("sexfemale = 0", "sexfemale:height_cm = 0"))
 ```
 
-
 ### Kommentarer til modellene ovenfor.
 
-Vi finner at når vi kun tar hensyn til høyde og inntekt er t-verdien 17.27, og er signifikant helt opp til et 0.001 nivå. Ved første øyenkast kan det da se ut til at høyde faktisk har utslagsgivende påvirkning på inntekt. Men hvis vi studerer resultatet, og da spesielt *R^2*, ser vi at den verdien er bare 0.05328. Det betyr at høyde kun forklarer 5.3% av resultatet vårt. Som en da ser i modell 2 og spessielt i modell 3, at desto flere variabler vi legger inn og må ta hensyn til, desto mindre betydning får høyde.
+Vi finner at når vi kun tar hensyn til høyde og inntekt er t-verdien 17.27, og er signifikant helt opp til et 0.001 nivå.
+Ved første øyenkast kan det da se ut til at høyde faktisk har utslagsgivende påvirkning på inntekt.
+Men hvis vi studerer resultatet, og da spesielt *R\^2*, ser vi at den verdien er bare 0.05328.
+Det betyr at høyde kun forklarer 5.3% av resultatet vårt.
+Som en da ser i modell 2 og spessielt i modell 3, at desto flere variabler vi legger inn og må ta hensyn til, desto mindre betydning får høyde.
 
-Modell 3 tar med flere variabler og vi ser da at t-verdien til høyde faller til 7.379, mens den fortsatt er signifikant på 0.001 nivå, som virker lovendes. Men vi ser også nå at kjønn har en t-verdi på 2.349 og signifikansnivå på 0.05, og om vedkommende er gift har t-verdi på 8.293 med 0.001 signifikans nivå. Vi ser her at høyde har fått en betraktelig mindre betydning når vi har lagt til flere variabler, der flere av de variablene har en stor betydning i iht. t-verdiene og signifikansnivåene.
+Modell 3 tar med flere variabler og vi ser da at t-verdien til høyde faller til 7.379, mens den fortsatt er signifikant på 0.001 nivå, som virker lovendes.
+Men vi ser også nå at kjønn har en t-verdi på 2.349 og signifikansnivå på 0.05, og om vedkommende er gift har t-verdi på 8.293 med 0.001 signifikans nivå.
+Vi ser her at høyde har fått en betraktelig mindre betydning når vi har lagt til flere variabler, der flere av de variablene har en stor betydning i iht.
+t-verdiene og signifikansnivåene.
 
-For modellene uten topp 2% inntekt ser vi akkurat samme tendens. Flere desto flere variabler, desto mindre betydning har høyden.
+For modellene uten topp 2% inntekt ser vi akkurat samme tendens.
+Flere desto flere variabler, desto mindre betydning har høyden.
 
-Vi ser også en annen tendens, som viser seg ved at idet øyeblikket vi legger til kjønn som en variabel, stuper t-verdien til høyde med 10. Vi kan dermed si med ganske stor sannsynlighet at kjønn har en enorm stor påvirkning på inntekten til personener.
+Vi ser også en annen tendens, som viser seg ved at idet øyeblikket vi legger til kjønn som en variabel, stuper t-verdien til høyde med 10.
+Vi kan dermed si med ganske stor sannsynlighet at kjønn har en enorm stor påvirkning på inntekten til personener.
 
 ## Modell uten både 0 og topp 2%
 
@@ -367,7 +515,7 @@ lm7 <- lm(modell_7, data = hoyde_filtrert)
 summary(lm7)
 ```
 
--
+-   
 
 ```{r Modell_8_Filtrert_Datasett}
 modell_8 <- "inntekt ~ sex*height_cm + weight_kg + marital"
@@ -375,7 +523,7 @@ lm8 <- lm(modell_8, data = hoyde_filtrert)
 summary(lm8)
 ```
 
--
+-   
 
 ```{r modell_9_Filtrert_Datasett_Med_Interaksjon_sex}
 modell_9 <- "inntekt ~ sex*(height_cm + weight_kg + marital + bmi + education + age)"
@@ -389,19 +537,24 @@ Test av koeffisienter:
 linearHypothesis(lm9, c("sexfemale = 0", "sexfemale:height_cm = 0"))
 ```
 
-
 ### Kommentar til modell 7, 8 og 9
 
-I modell 7 ser vi samme tendens som i modell 1 og 4, hvor høyde har en stor påvirkningskraft. Men så ser vi her på modell 8 og 9 uten både 0 inntekt og topp 2% inntekt. t-verdien til høyde har kollapset. Den er nå i modell 9 på 0.52, der 1.92 er den gylne standarden for t-verdier. Signifikansnivået har også kollapset fra 0.001 nivå helt ned til 0.6 felles nivå. Dette er før vi tar hensyn til kjønn. Med andre ord, er høyde faktisk ikke lengre signifikant.
+I modell 7 ser vi samme tendens som i modell 1 og 4, hvor høyde har en stor påvirkningskraft.
+Men så ser vi her på modell 8 og 9 uten både 0 inntekt og topp 2% inntekt.
+t-verdien til høyde har kollapset.
+Den er nå i modell 9 på 0.52, der 1.92 er den gylne standarden for t-verdier.
+Signifikansnivået har også kollapset fra 0.001 nivå helt ned til 0.6 felles nivå.
+Dette er før vi tar hensyn til kjønn.
+Med andre ord, er høyde faktisk ikke lengre signifikant.
 
 Vi ser dermed at når vi ser vekk fra de arbeidsledige samt topp 2% inntektsgruppen, i tillegg til å legge til flere variabler som kjønn, alder, utdanning, osv, så er ikke høyde lengre de-facto for inntekt.
 
 #### Resultat
 
-Vi forkaster $H_0$ da vi tydelig ser at både t-veriden og p<x verdien kollapser når vi legger til flere faktorer fremfor høyde. $H_1$ Er dermed gjeldende og resultatet vårt er:
+Vi forkaster $H_0$ da vi tydelig ser at både t-veriden og p\<x verdien kollapser når vi legger til flere faktorer fremfor høyde.
+$H_1$ Er dermed gjeldende og resultatet vårt er:
 
 Høyde alene er ikke de-facto grunnlag for høyere lønn, det er andre faktorer med som påvirker.
-
 
 # Residualer til datasettet "hoyde"
 
@@ -412,7 +565,7 @@ hoyde_filtrert <- hoyde %>%
   add_residuals(lm9)
 ```
 
--
+-   
 
 ```{r Head}
 hoyde_filtrert %>% 
@@ -439,8 +592,11 @@ facet_grid(sex ~ factor(married, labels = c("not married", "married")))
 
 # Konklusjon
 
-Vi kan ut ifra modellene våre, konkludere med at høyde ikke er den avgjørende faktoren for inntekt. Dette fremkommer spesielt tydelig i modell 9. Det er mange flere faktorer som har utslagsgivende påvirkning, som for eksempel utdanning, BMI, kjønn, alder, antall år i en jobb osv.
+Vi kan ut ifra modellene våre, konkludere med at høyde ikke er den avgjørende faktoren for inntekt.
+Dette fremkommer spesielt tydelig i modell 9.
+Det er mange flere faktorer som har utslagsgivende påvirkning, som for eksempel utdanning, BMI, kjønn, alder, antall år i en jobb osv.
 
-Studien gjennomført av Judge & Cable ser ut til å ha oversett viktige data i analysen deres, eller ikke gått nok i dybden på hvordan alle faktorer påvirker. En kan selvsagt ikke se helt bort fra at det er tilfeller hvor en høy person får en jobb som betaler bedre fremfor en lav person, men ut fra dataene og resultatene våre kan vi med høy treffsikkerhet vurdere det dithen at: Høyde alene ikke er de-facto grunnlag for høy lønn.
+Studien gjennomført av Judge & Cable ser ut til å ha oversett viktige data i analysen deres, eller ikke gått nok i dybden på hvordan alle faktorer påvirker.
+En kan selvsagt ikke se helt bort fra at det er tilfeller hvor en høy person får en jobb som betaler bedre fremfor en lav person, men ut fra dataene og resultatene våre kan vi med høy treffsikkerhet vurdere det dithen at: Høyde alene ikke er de-facto grunnlag for høy lønn.
 
 # Referanser

@@ -1,0 +1,9 @@
+---
+title: "AG comments"
+output: html_notebook
+---
+
+-   Reproduserbart til html og pdf uten noen problem. Flott!
+-   EDA analysen er lovlig tynn. Jeg har lagt inn noen ideer for mulige plot. I de to siste plotene begynner en å ane hva som bestemmer inntekt.
+-   EDA kan gi viktig informasjon for valg av modell.
+-   Ta en titt på hvordan jeg formulerer modeller, bruker datasettet og lager reduserte datasett. Enkle teknikker der jeg tror dere har mye å vinne. Ha det som et mål å ha få objekter definert i workspace (Environment).
